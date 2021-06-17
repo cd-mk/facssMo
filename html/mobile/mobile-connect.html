@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="loading dark-layout" lang="en" data-layout="dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description"
+        content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Layout collapsed menu - Vuexy - Bootstrap HTML admin template</title>
+    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-quill-editor.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/extensions/ext-component-toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-chat.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-chat-list.min.css">
+
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/monitor.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click"
+    data-menu="vertical-menu-modern" data-col="blank-page">
+
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="col">
+                    <h1>OTM</h1>
+                    <p>신분증 등록 및 모니터링 연결을 위하여
+                        전송 받은 인증코드를 입력하세요</p>
+                </div>
+            </div>
+            <div class="content-body">
+                <small class="font-weight-semibold w-100 ml-1 my-1">Custom checkbox and radio</small>
+                <form class="row">
+                    <div class="col">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-auto text-muted">-</div>
+                    <div class="col">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-auto text-muted">-</div>
+                    <div class="col">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-auto text-muted">-</div>
+                    <div class="col">
+                        <input type="text" class="form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-dark">
+        <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">
+                COPYRIGHT &copy; 2021<a class="ml-25" href="https://metsakuur.com" target="_blank">metsakuur</a>
+                <span class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- <script src="../../app-assets/vendors/js/editors/quill/katex.min.js"></script>
+        <script src="../../app-assets/vendors/js/editors/quill/highlight.min.js"></script> -->
+    <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
+    <script src="../../app-assets/vendors/js/extensions/toastr.min.js"></script>
+    <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.min.js"></script>
+    <script src="../../app-assets/js/core/app.min.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: common custom JS-->
+    <script src="../../assets/js/main.js"></script>
+    <!-- END: common custom JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/pages/app-sliding.min.js"></script>
+    <script src="../../app-assets/js/scripts/pages/app-chat.min.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        //이미지 변경 함수 호출
+        $(document).ready(function () {
+            changeIMG();
+
+        });
+
+        function changeIMG() {
+            $('.user-check.active').find('.ficon').replaceWith(feather.icons['user-check'].toSvg({ class: 'ficon' }));
+            $('.user-video.active').find('.ficon').replaceWith(feather.icons['video'].toSvg({ class: 'ficon' }));
+        }
+    </script>
+
+    <script>
+        //sound meter
+        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+        if (navigator.getUserMedia) {
+            navigator.getUserMedia({
+                audio: true
+            },
+                function (stream) {
+                    audioContext = new AudioContext();
+                    analyser = audioContext.createAnalyser();
+                    microphone = audioContext.createMediaStreamSource(stream);
+                    javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
+
+                    analyser.smoothingTimeConstant = 0.8;
+                    analyser.fftSize = 1024;
+
+                    microphone.connect(analyser);
+                    analyser.connect(javascriptNode);
+                    javascriptNode.connect(audioContext.destination);
+
+                    canvasContext = $(".sound-meter")[0].getContext("2d");
+
+                    javascriptNode.onaudioprocess = function () {
+                        var array = new Uint8Array(analyser.frequencyBinCount);
+                        analyser.getByteFrequencyData(array);
+                        var values = 0;
+
+                        var length = array.length;
+                        for (var i = 0; i < length; i++) {
+                            values += (array[i]);
+                        }
+
+                        var average = values / length;
+
+                        //console.log(Math.round(average - 40));
+
+                        canvasContext.clearRect(0, 0, 100, 20);
+                        canvasContext.fillStyle = '#BadA55';
+                        canvasContext.fillRect(average - 100, 0, 100, 20);
+                        canvasContext.fillStyle = '#fff';
+                        canvasContext.font = "12px";
+                        canvasContext.fillText(Math.round(average - 0), -2, 20);
+
+                    } // end fn stream
+                },
+                function (err) {
+                    console.log("The following error occured: " + err.name)
+                });
+        } else {
+            console.log("getUserMedia not supported");
+        }
+        jQuery.event.special.touchstart = {
+            setup: function (_, ns, handle) {
+                if (ns.includes("noPreventDefault")) {
+                    this.addEventListener("touchstart", handle, { passive: false });
+                } else {
+                    this.addEventListener("touchstart",
+                        handle, { passive: true });
+                }
+            }
+        };
+
+
+
+        $(function () {
+            var userChatsAll = $('.history-list-wrap')
+            // init ps if it is not touch device
+            if (!$.app.menu.is_touch_device()) {
+
+                if (userChatsAll.length > 0) {
+                    var chatsUser = new PerfectScrollbar(userChatsAll[0], {
+                        wheelPropagation: false
+                    });
+                }
+            } else {
+                userChatsAll.css('overflow', 'scroll');
+            }
+        });
+    </script>
+
+</body>
+<!-- END: Body-->
+
+</html>

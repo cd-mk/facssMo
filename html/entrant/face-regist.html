@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="loading light-layout" lang="en" data-layout="light-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Nochitbot 일정 확인</title>
+    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.min.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/entrant.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="horizontal-layout horizontal-menu blank-page navbar-floating footer-static body-bg-1" data-open="hover" data-menu="horizontal-menu" data-col="blank-page">
+    <!-- Page content -->
+    <div class="row cont-wrap steps-application">
+        
+        <div class="col">
+            <div class="row header">
+                <div class="col inner">
+                   <h1>본인 확인 등록 및 테스트 안내</h1>
+                </div>
+            </div>
+            <div class="row content-reg">
+                <div class="steps clearfix">
+                    <ul role="step-guide">
+                        <li class="step-guide-inner complete"><a href="face-rec-1.html"><span class="number">1.</span> 본인 확인 등록 및 테스트 안내</a></li> 
+                        <li class="step-guide-inner complete"><a href="face-rec-2.html"><span class="number">2</span>이용 약관 동의</a></li> 
+                        <li class="step-guide-inner complete"><a href="face-rec-3.html"><span class="number">3</span>신분증 등록</a></li> 
+                        <li class="step-guide-inner complete"><a href="face-rec-4.html"><span class="number">4</span>얼굴 등록</a></li> 
+                        <li class="step-guide-inner complete"><a href="face-rec-5.html"><span class="number">5</span>신분증 등록 및 얼굴 등록 확인</a></li>
+                        <li class="step-guide-inner complete"><a href="face-rec-6.html"><span class="number">6</span>기기 연결 설정 및 웹캠 연결 확인</a></li>
+                        <li class="step-guide-inner active"><a href="face-rec-7.html"><span class="number">7</span> 데모 시험 환경 입장 및 제출</a></li>
+                    </ul>
+                </div>
+                <div class="col faceRec-box">
+                    <div class="cam-wrap d-flex flex-column">
+                        <div class="row fackRec-logo">
+                            <div class="col"><img src="../../assets/images/logo.png" alt="METSA FR"></div>
+                        </div>
+                        <div class="row cam-box card">
+                            <div class="col status-box">
+                                <img id="cam_img" src="../../assets/images/null640x480.png" width="100%">
+                                <div id="div_status_box" class="col cam-inner">
+                                    <div class="inner">
+                                        <p class="text-status">카메라를 준비 중입니다.</p>
+                                        <strong class="text-count">3</strong>
+                                    </div>
+                                    <div class="inner2 invisible">
+                                        <p class="text-status2">화면에 파란원이 보일때까지<br>얼굴 위치를 조정해 주세요</p>
+                                    </div>
+                                </div>
+
+                                <video id="vid_camera" autoplay playsinline muted style="display:none;">Your browser does not support the video tag.</video>
+                                <canvas id="cvs_guide" width="100%" height="100%" style="display:none;">Your browser does not support canvas.</canvas>
+                                <canvas id="cvs_output" width="100%" height="100%" style="display:none;">Your browser does not support canvas.</canvas>
+                            </div>
+                        </div>
+
+                        <div class="row choice-photo flex-grow-1">
+                            <div class="col" num="0"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=">
+                            </div>
+                            <div class="col" num="1"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=">
+                            </div>
+                            <div class="col" num="2"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- footer area : S -->
+            <div class="row footer card-footer">
+                <div class="col btn-box center">
+                    <p class="guide-box text-guide">노트북, 데스크탑, 태블릿에 장착된 카메라를 정면으로 바라봐 주시기 바랍니다.</p>
+                    <!-- Button trigger modal -->
+                    <div class="btn-group">
+                        <button id="btn1" type="button" class="btn btn-success btn-lg text-large">재촬영</button>
+                        <button id="btn2" type="button" class="btn btn-primary btn-lg text-large">등록</button>
+                        <button id="btn4" type="button" class="btn btn-danger btn-lg text-large">취소</button>
+                    </div>
+                </div>
+            </div>
+            <!-- footer area : E -->
+        </div>
+    </div>
+
+    <script id="tmpl_modal" type="text/x-tmpl">
+
+        <div class="modal fade" id="div_modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title">${title}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center py-5 text-success">
+                        <div class="text-center mb-2">
+                            <i class="far fa-check-circle fa-3x"></i>
+                        </div>
+                        ${mesg}
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        ${btn_html}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</script>
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.min.js"></script>
+    <script src="../../app-assets/js/core/app.min.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: common custom JS-->
+    <script src="../../assets/js/main.js"></script>
+    <!-- END: common custom JS-->
+
+    <!-- BEGIN: Page JS-->
+
+     <script>
+         const COMPLETE_URL =
+             'https://google.com/search?q=OK&send_code=e7178bf7da7b1249dcd3d2ed2562a4f7b147f5ce356b7e9abaada9e9bbd63a4416';
+         const COMPLETE_URL2 = 'https://google.com/search?q=FAIL';
+         var _GET = {
+             "svc_id": "1",
+             "receipt_code": "3",
+             "student_code": "user421",
+             "return_url": "https:\/\/google.com\/search?q=OK",
+             "fail_url": "https:\/\/google.com\/search?q=FAIL",
+             "exam_seq": 1,
+             "loc_seq": "3",
+             "user": "user421",
+             "inspector": "\ud64d\uae38\ub3d9",
+             "det_seq": 16
+         };
+         var Module = {
+             preRun: [function () {
+                 // Module.FS_createPreloadedFile('/', 'default.xml', 'opencv/haarcascade_frontalface_default.xml', true, false);
+                 // Module.FS_createPreloadedFile('/', 'default.xml', 'opencv/haarcascade_frontalface_alt_tree.xml', true, false);
+                 Module.FS_createPreloadedFile('/', 'default.xml',
+                     'opencv/haarcascade_frontalface_cuda.xml',
+                     true, false);
+             }],
+             _main: function () {
+                 jsFD.config.min_width = 200; //	등록시에는 크게
+                 jsFD.init();
+                 load_camera(detect_init);
+             }
+         };
+
+
+
+         // 사진 선택 표시
+         $(function () {
+
+             $(window).resize(function () {
+                 requestAnimationFrame(detect_resize);
+             });
+
+             // setInterval(' detect_resize(); ',1000);
+
+         });
+     </script>
+
+     <script src="../../assets/js/fr-common.js"></script>
+     <script src="../../assets/js/face-regist.js"></script>
+     <script src="../../assets/js/fr-opencv.js"></script>
+     <script src="../../assets/js/opencv/opencv.js"></script>
+    <!-- END: Page JS-->
+</body>
+
+</html>
