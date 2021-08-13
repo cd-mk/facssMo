@@ -1,15 +1,11 @@
 .swal2-container .swal2-popup {
-  -webkit-border-radius : 0.428rem;
-     -moz-border-radius : 0.428rem;
-          border-radius : 0.428rem;
+  border-radius : 0.428rem;
   padding : 2rem;
 }
 
 .swal2-container .swal2-popup .swal2-close:focus {
   outline : none;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .swal2-container .swal2-popup .swal2-content {
@@ -23,9 +19,7 @@
 }
 
 .swal2-container .swal2-popup button.swal2-confirm:focus {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .swal2-container .swal2-popup input.swal2-input {
@@ -34,29 +28,25 @@
   padding : 0.438rem 1rem;
   color : #6E6B7B;
   border-color : #D8D6DE;
-  -webkit-border-radius : 0.357rem;
-     -moz-border-radius : 0.357rem;
-          border-radius : 0.357rem;
+  border-radius : 0.357rem;
   line-height : 1.45;
 }
 
 .swal2-container .swal2-popup input.swal2-input:focus {
-  border-color : #0D92FF !important;
-  -webkit-box-shadow : 0 3px 10px 0 rgba(34, 41, 47, 0.1);
-     -moz-box-shadow : 0 3px 10px 0 rgba(34, 41, 47, 0.1);
-          box-shadow : 0 3px 10px 0 rgba(34, 41, 47, 0.1);
+  border-color : #7367F0 !important;
+  box-shadow : 0 3px 10px 0 rgba(34, 41, 47, 0.1);
 }
 
 .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step {
-  background-color : #0D92FF;
+  background-color : #7367F0;
 }
 
 .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line, .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {
-  background-color : #5AB4FF;
+  background-color : #B3ADF7;
 }
 
 .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step-line {
-  background-color : #0D92FF;
+  background-color : #7367F0;
 }
 
 .swal2-container .swal2-popup pre {

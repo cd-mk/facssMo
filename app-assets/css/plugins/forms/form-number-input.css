@@ -1,11 +1,7 @@
 /* Bootstrap Touchspin */
 .bootstrap-touchspin.input-group {
   width : 8.4rem;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  align-items : center;
 }
 
 .bootstrap-touchspin.input-group .form-control {
@@ -13,18 +9,14 @@
   height : auto;
   border : 0;
   background-color : #F8F8F8;
-  -webkit-border-radius : 0.357rem !important;
-     -moz-border-radius : 0.357rem !important;
-          border-radius : 0.357rem !important;
+  border-radius : 0.357rem !important;
   text-align : center;
   font-weight : 500;
 }
 
 .bootstrap-touchspin.input-group .form-control:focus {
   z-index : 1;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .bootstrap-touchspin .bootstrap-touchspin-injected {
@@ -45,9 +37,7 @@
   padding : 0;
   min-width : 20px;
   min-height : 20px;
-  -webkit-border-radius : 0.357rem !important;
-     -moz-border-radius : 0.357rem !important;
-          border-radius : 0.357rem !important;
+  border-radius : 0.357rem !important;
 }
 
 .bootstrap-touchspin .bootstrap-touchspin-injected .bootstrap-touchspin-down i, .bootstrap-touchspin .bootstrap-touchspin-injected .bootstrap-touchspin-down svg, .bootstrap-touchspin .bootstrap-touchspin-injected .bootstrap-touchspin-up i, .bootstrap-touchspin .bootstrap-touchspin-injected .bootstrap-touchspin-up svg {

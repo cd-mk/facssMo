@@ -27,30 +27,15 @@
 }
 
 .ecommerce-application .sidebar-shop .brand-list li {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : justify;
-  -webkit-justify-content : space-between;
-     -moz-box-pack : justify;
-  -ms-flex-pack : justify;
-          justify-content : space-between;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  justify-content : space-between;
+  align-items : center;
   margin-bottom : 0.75rem;
 }
 
 .ecommerce-application .sidebar-shop .range-slider.noUi-horizontal .noUi-handle .noUi-tooltip {
   opacity : 0;
-  -webkit-transform : translate(-50%, -15%);
-     -moz-transform : translate(-50%, -15%);
-      -ms-transform : translate(-50%, -15%);
-          transform : translate(-50%, -15%);
+  transform : translate(-50%, -15%);
 }
 
 .ecommerce-application .sidebar-shop .range-slider.noUi-horizontal .noUi-handle .noUi-tooltip:before {
@@ -62,16 +47,8 @@
 }
 
 .ecommerce-application .sidebar-shop .ratings-list {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : justify;
-  -webkit-justify-content : space-between;
-     -moz-box-pack : justify;
-  -ms-flex-pack : justify;
-          justify-content : space-between;
+  display : flex;
+  justify-content : space-between;
   margin-bottom : 0.5rem;
 }
 
@@ -101,29 +78,13 @@
 }
 
 .ecommerce-application .ecommerce-header-items {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : justify;
-  -webkit-justify-content : space-between;
-     -moz-box-pack : justify;
-  -ms-flex-pack : justify;
-          justify-content : space-between;
+  display : flex;
+  justify-content : space-between;
 }
 
 .ecommerce-application .ecommerce-header-items .result-toggler {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  align-items : center;
 }
 
 .ecommerce-application .ecommerce-header-items .result-toggler .shop-sidebar-toggler {
@@ -151,12 +112,8 @@
 }
 
 .ecommerce-application .ecommerce-searchbar .input-group {
-  -webkit-box-shadow : 0 2px 8px 0 rgba(34, 41, 47, 0.14);
-     -moz-box-shadow : 0 2px 8px 0 rgba(34, 41, 47, 0.14);
-          box-shadow : 0 2px 8px 0 rgba(34, 41, 47, 0.14);
-  -webkit-border-radius : 0.3rem;
-     -moz-border-radius : 0.3rem;
-          border-radius : 0.3rem;
+  box-shadow : 0 2px 8px 0 rgba(34, 41, 47, 0.14);
+  border-radius : 0.3rem;
 }
 
 .ecommerce-application .search-product, .ecommerce-application .input-group-text {
@@ -164,14 +121,6 @@
   border : none;
   font-size : 0.95rem;
   padding-left : 1.25rem;
-}
-
-.ecommerce-application .search-product::-webkit-input-placeholder, .ecommerce-application .input-group-text::-webkit-input-placeholder {
-  font-size : 0.95rem;
-}
-
-.ecommerce-application .search-product:-moz-placeholder, .ecommerce-application .input-group-text:-moz-placeholder {
-  font-size : 0.95rem;
 }
 
 .ecommerce-application .search-product::-moz-placeholder, .ecommerce-application .input-group-text::-moz-placeholder {
@@ -187,13 +136,8 @@
 }
 
 .ecommerce-application .ecommerce-card:hover {
-  -webkit-transform : translateY(-5px);
-     -moz-transform : translateY(-5px);
-      -ms-transform : translateY(-5px);
-          transform : translateY(-5px);
-  -webkit-box-shadow : 0 4px 25px 0 rgba(34, 41, 47, 0.25);
-     -moz-box-shadow : 0 4px 25px 0 rgba(34, 41, 47, 0.25);
-          box-shadow : 0 4px 25px 0 rgba(34, 41, 47, 0.25);
+  transform : translateY(-5px);
+  box-shadow : 0 4px 25px 0 rgba(34, 41, 47, 0.25);
 }
 
 .ecommerce-application .ecommerce-card .item-rating ul {
@@ -243,9 +187,8 @@
 .ecommerce-application .grid-view {
   display : grid;
   grid-template-columns : 1fr 1fr 1fr;
-  -webkit-column-gap : 2rem;
-     -moz-column-gap : 2rem;
-          column-gap : 2rem;
+  -moz-column-gap : 2rem;
+       column-gap : 2rem;
 }
 
 .ecommerce-application .grid-view.wishlist-items {
@@ -259,34 +202,14 @@
 .ecommerce-application .grid-view .ecommerce-card .item-img {
   padding-top : 0.5rem;
   min-height : 15.85rem;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  align-items : center;
 }
 
 .ecommerce-application .grid-view .ecommerce-card .item-wrapper {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : justify;
-  -webkit-justify-content : space-between;
-     -moz-box-pack : justify;
-  -ms-flex-pack : justify;
-          justify-content : space-between;
-  -webkit-box-align : baseline;
-  -webkit-align-items : baseline;
-     -moz-box-align : baseline;
-  -ms-flex-align : baseline;
-          align-items : baseline;
+  display : flex;
+  justify-content : space-between;
+  align-items : baseline;
 }
 
 .ecommerce-application .grid-view .ecommerce-card .shipping, .ecommerce-application .grid-view .ecommerce-card .item-company, .ecommerce-application .grid-view .ecommerce-card .item-options .item-price {
@@ -294,25 +217,13 @@
 }
 
 .ecommerce-application .grid-view .ecommerce-card .item-options {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-flex-wrap : wrap;
-      -ms-flex-wrap : wrap;
-          flex-wrap : wrap;
+  display : flex;
+  flex-wrap : wrap;
 }
 
 .ecommerce-application .grid-view .ecommerce-card .item-options .btn-cart, .ecommerce-application .grid-view .ecommerce-card .item-options .btn-wishlist {
-  -webkit-box-flex : 1;
-  -webkit-flex-grow : 1;
-     -moz-box-flex : 1;
-  -ms-flex-positive : 1;
-          flex-grow : 1;
-  -webkit-border-radius : 0;
-     -moz-border-radius : 0;
-          border-radius : 0;
+  flex-grow : 1;
+  border-radius : 0;
 }
 
 .ecommerce-application .grid-view .ecommerce-card .item-name {
@@ -346,63 +257,29 @@
 }
 
 .ecommerce-application .list-view .ecommerce-card .item-img {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  justify-content : center;
+  align-items : center;
   height : 100%;
 }
 
 .ecommerce-application .list-view .ecommerce-card .card-body {
   padding : 1.5rem 1rem;
   border-right : 1px solid #EBE9F1;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-orient : vertical;
-  -webkit-box-direction : normal;
-  -webkit-flex-direction : column;
-     -moz-box-orient : vertical;
-     -moz-box-direction : normal;
-      -ms-flex-direction : column;
-          flex-direction : column;
+  display : flex;
+  flex-direction : column;
 }
 
 .ecommerce-application .list-view .ecommerce-card .card-body .item-wrapper {
-  -webkit-box-ordinal-group : 3;
-  -webkit-order : 2;
-     -moz-box-ordinal-group : 3;
-  -ms-flex-order : 2;
-          order : 2;
+  order : 2;
 }
 
 .ecommerce-application .list-view .ecommerce-card .card-body .item-name {
-  -webkit-box-ordinal-group : 2;
-  -webkit-order : 1;
-     -moz-box-ordinal-group : 2;
-  -ms-flex-order : 1;
-          order : 1;
+  order : 1;
 }
 
 .ecommerce-application .list-view .ecommerce-card .card-body .item-description {
-  -webkit-box-ordinal-group : 4;
-  -webkit-order : 3;
-     -moz-box-ordinal-group : 4;
-  -ms-flex-order : 3;
-          order : 3;
+  order : 3;
   display : -webkit-box;
   -webkit-line-clamp : 5;
   -webkit-box-orient : vertical;
@@ -419,11 +296,7 @@
 }
 
 .ecommerce-application .list-view .ecommerce-card .item-company {
-  display : -webkit-inline-box;
-  display : -webkit-inline-flex;
-  display :    -moz-inline-box;
-  display : -ms-inline-flexbox;
-  display :         inline-flex;
+  display : inline-flex;
   font-weight : 400;
   margin : 0.3rem 0 0.5rem;
   font-size : 0.875rem;
@@ -436,23 +309,9 @@
 
 .ecommerce-application .list-view .ecommerce-card .item-options {
   padding : 1rem;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-orient : vertical;
-  -webkit-box-direction : normal;
-  -webkit-flex-direction : column;
-     -moz-box-orient : vertical;
-     -moz-box-direction : normal;
-      -ms-flex-direction : column;
-          flex-direction : column;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
 }
 
 .ecommerce-application .list-view .ecommerce-card .item-options .item-wrapper {
@@ -460,7 +319,7 @@
 }
 
 .ecommerce-application .list-view .ecommerce-card .item-options .item-wrapper .item-cost .item-price {
-  color : #0D92FF;
+  color : #7367F0;
   margin-bottom : 0;
 }
 
@@ -482,11 +341,7 @@
 }
 
 .ecommerce-application .checkout-items .ecommerce-card .item-name {
-  -webkit-box-ordinal-group : 1 !important;
-  -webkit-order : 0 !important;
-     -moz-box-ordinal-group : 1 !important;
-  -ms-flex-order : 0 !important;
-          order : 0 !important;
+  order : 0 !important;
 }
 
 .ecommerce-application .checkout-items .ecommerce-card .item-company, .ecommerce-application .checkout-items .ecommerce-card .item-rating {
@@ -494,16 +349,8 @@
 }
 
 .ecommerce-application .checkout-items .ecommerce-card .item-quantity {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  align-items : center;
 }
 
 .ecommerce-application .checkout-items .ecommerce-card .delivery-date {
@@ -512,42 +359,18 @@
 }
 
 .ecommerce-application .checkout-items .ecommerce-card .item-options .btn {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
+  display : flex;
+  align-items : center;
+  justify-content : center;
 }
 
 .ecommerce-application .checkout-options .coupons:focus-within {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .ecommerce-application .checkout-options .coupons input {
   border : none;
   padding-left : 0;
-  color : #6E6B7B;
-  font-weight : 600;
-}
-
-.ecommerce-application .checkout-options .coupons input::-webkit-input-placeholder {
-  color : #6E6B7B;
-  font-weight : 600;
-}
-
-.ecommerce-application .checkout-options .coupons input:-moz-placeholder {
   color : #6E6B7B;
   font-weight : 600;
 }
@@ -584,16 +407,8 @@
 }
 
 .ecommerce-application .checkout-options .price-details .price-detail {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : justify;
-  -webkit-justify-content : space-between;
-     -moz-box-pack : justify;
-  -ms-flex-pack : justify;
-          justify-content : space-between;
+  display : flex;
+  justify-content : space-between;
   margin-bottom : 0.75rem;
 }
 
@@ -607,9 +422,7 @@
 
 .ecommerce-application .checkout-tab-steps {
   background-color : transparent !important;
-  -webkit-box-shadow : none !important;
-     -moz-box-shadow : none !important;
-          box-shadow : none !important;
+  box-shadow : none !important;
 }
 
 .ecommerce-application .checkout-tab-steps .bs-stepper-header {
@@ -622,19 +435,14 @@
   }
   .ecommerce-application .product-checkout.list-view {
     grid-template-columns : 2fr 1fr;
-    -webkit-column-gap : 2rem;
-       -moz-column-gap : 2rem;
-            column-gap : 2rem;
+    -moz-column-gap : 2rem;
+         column-gap : 2rem;
   }
 }
 
 @media (max-width: 1199.98px) {
   .ecommerce-application .ecommerce-header-items .btn-group {
-    -webkit-box-align : center;
-    -webkit-align-items : center;
-       -moz-box-align : center;
-    -ms-flex-align : center;
-            align-items : center;
+    align-items : center;
   }
   .ecommerce-application .ecommerce-header-items .btn-group .btn-icon {
     padding : 0.6rem 0.736rem;
@@ -665,19 +473,12 @@
 
 @media (max-width: 991.98px) {
   .ecommerce-application .sidebar-left .sidebar .card {
-    -webkit-border-radius : 0;
-       -moz-border-radius : 0;
-            border-radius : 0;
+    border-radius : 0;
     margin : 0;
   }
   .ecommerce-application .sidebar-left .sidebar .sidebar-shop {
-    -webkit-transform : translateX(-112%);
-       -moz-transform : translateX(-112%);
-        -ms-transform : translateX(-112%);
-            transform : translateX(-112%);
-    -webkit-transition : all 0.25s ease;
-       -moz-transition : all 0.25s ease;
-            transition : all 0.25s ease;
+    transform : translateX(-112%);
+    transition : all 0.25s ease;
     position : fixed;
     top : 0;
     left : 0;
@@ -686,13 +487,8 @@
     margin : 0;
   }
   .ecommerce-application .sidebar-left .sidebar .sidebar-shop.show {
-    -webkit-transition : all 0.25s ease;
-       -moz-transition : all 0.25s ease;
-            transition : all 0.25s ease;
-    -webkit-transform : translateX(0);
-       -moz-transform : translateX(0);
-        -ms-transform : translateX(0);
-            transform : translateX(0);
+    transition : all 0.25s ease;
+    transform : translateX(0);
   }
   .ecommerce-application .grid-view {
     grid-template-columns : 1fr 1fr;

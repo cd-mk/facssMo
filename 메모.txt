@@ -1,0 +1,18 @@
+[gulp 설치]
+yarn add gulp-cli -g
+
+yarn run 실행
+ -> gulp 입력
+
+
+
+폴더:
+app-assets :  css, js, 글꼴, 이미지 파일(이 폴더에서 파일을 변경하지 않는 것이 좋습니다. 대신 "assets" 폴더를 사용)
+assets : 커스텀 및 CSS, js 파일 및 이미지를 추가할때
+gulp-tasks : 모든 gupl 작업 파일
+html :
+  - entrant : 응시생 페이지
+  - mobile : 모바일 접속 인증코드 인증
+  - monitor : 모니터링 감독관 페이지
+  - sample : 샘플페이지 (참고용)
+src :  SCSS 및 JS와 같은 이 템플릿의 소스 파일이 포함됩니다

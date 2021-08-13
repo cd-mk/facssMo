@@ -1,7 +1,5 @@
 .bordered-layout .header-navbar {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .bordered-layout .header-navbar.floating-nav {
@@ -15,9 +13,7 @@
 
 .bordered-layout .main-menu {
   border-right : 1px solid #EBE9F1;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .bordered-layout .main-menu.menu-light .navigation > li.open:not(.menu-item-closing) > a, .bordered-layout .main-menu.menu-light .navigation > li.sidebar-group-active > a {
@@ -26,9 +22,7 @@
 
 .bordered-layout .dropdown-menu {
   border : 1px solid #EBE9F1 !important;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .bordered-layout .main-menu .navigation, .bordered-layout .main-menu {
@@ -37,15 +31,11 @@
 
 .bordered-layout .card, .bordered-layout .bs-stepper:not(.wizard-modern):not(.checkout-tab-steps), .bordered-layout .bs-stepper.wizard-modern .bs-stepper-content {
   border : 1px solid #EBE9F1;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .bordered-layout .footer {
-  -webkit-box-shadow : none !important;
-     -moz-box-shadow : none !important;
-          box-shadow : none !important;
+  box-shadow : none !important;
 }
 
 .bordered-layout .footer-fixed .footer {

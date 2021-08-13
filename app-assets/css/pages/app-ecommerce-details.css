@@ -20,15 +20,11 @@
 }
 
 .ecommerce-application .app-ecommerce-details .item-price {
-  color : #0D92FF;
+  color : #7367F0;
 }
 
 .ecommerce-application .app-ecommerce-details .item-company {
-  display : -webkit-inline-box;
-  display : -webkit-inline-flex;
-  display :    -moz-inline-box;
-  display : -ms-inline-flexbox;
-  display :         inline-flex;
+  display : inline-flex;
   font-weight : 400;
   font-size : 0.875rem;
 }
@@ -44,16 +40,8 @@
 }
 
 .ecommerce-application .app-ecommerce-details .product-features li {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  align-items : center;
   margin-bottom : 1rem;
 }
 
@@ -92,34 +80,20 @@
   font-size : 2.5rem;
   height : 2.5rem;
   width : 2.5rem;
-  color : #0D92FF;
+  color : #7367F0;
 }
 
 .ecommerce-application .swiper-responsive-breakpoints.swiper-container .swiper-slide {
   text-align : center;
   background-color : #F8F8F8;
   padding : 1.5rem 3rem;
-  -webkit-border-radius : 0.428rem;
-     -moz-border-radius : 0.428rem;
-          border-radius : 0.428rem;
+  border-radius : 0.428rem;
 }
 
 .ecommerce-application .swiper-responsive-breakpoints.swiper-container .swiper-slide .img-container {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
+  display : flex;
+  align-items : center;
+  justify-content : center;
   height : 250px;
 }
 
@@ -138,11 +112,10 @@
 }
 
 .ecommerce-application .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -154,11 +127,10 @@
 }
 
 .ecommerce-application .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -166,11 +138,10 @@
 }
 
 .ecommerce-application .swiper-container-rtl .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -178,11 +149,10 @@
 }
 
 .ecommerce-application .swiper-container-rtl .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -191,9 +161,7 @@
 
 .ecommerce-application .product-color-options .color-option {
   border : 1px solid transparent;
-  -webkit-border-radius : 50%;
-     -moz-border-radius : 50%;
-          border-radius : 50%;
+  border-radius : 50%;
   position : relative;
   cursor : pointer;
   padding : 3px;
@@ -202,19 +170,15 @@
 .ecommerce-application .product-color-options .color-option .filloption {
   height : 18px;
   width : 18px;
-  -webkit-border-radius : 50%;
-     -moz-border-radius : 50%;
-          border-radius : 50%;
+  border-radius : 50%;
 }
 
 .ecommerce-application .product-color-options .selected .b-primary {
-  border-color : #0D92FF;
+  border-color : #7367F0;
 }
 
 .ecommerce-application .product-color-options .selected .b-primary .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(115, 103, 240, 0.4);
 }
 
 .ecommerce-application .product-color-options .selected .b-success {
@@ -222,9 +186,7 @@
 }
 
 .ecommerce-application .product-color-options .selected .b-success .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
 }
 
 .ecommerce-application .product-color-options .selected .b-danger {
@@ -232,9 +194,7 @@
 }
 
 .ecommerce-application .product-color-options .selected .b-danger .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
 }
 
 .ecommerce-application .product-color-options .selected .b-warning {
@@ -242,49 +202,35 @@
 }
 
 .ecommerce-application .product-color-options .selected .b-warning .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
 }
 
 .ecommerce-application .product-color-options .selected .b-info {
-  border-color : #00A6E8;
+  border-color : #0D92FF;
 }
 
 .ecommerce-application .product-color-options .selected .b-info .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(0, 166, 232, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(0, 166, 232, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(0, 166, 232, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-primary .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(115, 103, 240, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-success .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-danger .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(234, 84, 85, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-warning .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-info .filloption {
-  -webkit-box-shadow : 0 2px 4px 0 rgba(0, 166, 232, 0.4);
-     -moz-box-shadow : 0 2px 4px 0 rgba(0, 166, 232, 0.4);
-          box-shadow : 0 2px 4px 0 rgba(0, 166, 232, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
 }
 
 @media (max-width: 767.98px) {

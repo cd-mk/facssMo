@@ -10,9 +10,7 @@
 /* ---------- */
 /* swiper slide shadow */
 .swiper-container .swiper-shadow {
-  -webkit-box-shadow : 2px 8px 10px 0 rgba(25, 42, 70, 0.13) !important;
-     -moz-box-shadow : 2px 8px 10px 0 rgba(25, 42, 70, 0.13) !important;
-          box-shadow : 2px 8px 10px 0 rgba(25, 42, 70, 0.13) !important;
+  box-shadow : 2px 8px 10px 0 rgba(25, 42, 70, 0.13) !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet:focus {
@@ -20,11 +18,11 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color : #0D92FF;
+  background-color : #7367F0;
 }
 
 .swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background-color : #0D92FF;
+  background-color : #7367F0;
 }
 
 .swiper-centered-slides.swiper-container .swiper-slide {
@@ -38,11 +36,11 @@
 }
 
 .swiper-centered-slides.swiper-container .swiper-slide.swiper-slide-active {
-  border : 2px solid #0D92FF;
+  border : 2px solid #7367F0;
 }
 
 .swiper-centered-slides.swiper-container .swiper-slide.swiper-slide-active i, .swiper-centered-slides.swiper-container .swiper-slide.swiper-slide-active svg {
-  color : #0D92FF;
+  color : #7367F0;
 }
 
 .swiper-centered-slides .swiper-button-next:after {
@@ -59,15 +57,10 @@
 }
 
 .swiper-centered-slides .swiper-button-next:after, .swiper-centered-slides .swiper-button-prev:after {
-  -webkit-border-radius : 50%;
-     -moz-border-radius : 50%;
-          border-radius : 50%;
-  background-color : #0D92FF;
-  -webkit-box-shadow : 0 2px 4px 0 rgba(34, 41, 47, 0.5) !important;
-     -moz-box-shadow : 0 2px 4px 0 rgba(34, 41, 47, 0.5) !important;
-          box-shadow : 0 2px 4px 0 rgba(34, 41, 47, 0.5) !important;
-  -moz-background-size : 24px !important;
-       background-size : 24px !important;
+  border-radius : 50%;
+  background-color : #7367F0;
+  box-shadow : 0 2px 4px 0 rgba(34, 41, 47, 0.5) !important;
+  background-size : 24px !important;
   height : 40px !important;
   width : 40px !important;
 }
@@ -90,10 +83,8 @@
 
 .swiper-centered-slides-2.swiper-container .swiper-slide.swiper-slide-active {
   color : #FFFFFF;
-  background-color : #0D92FF !important;
-  -webkit-box-shadow : 0 3px 6px 0 rgba(13, 146, 255, 0.5) !important;
-     -moz-box-shadow : 0 3px 6px 0 rgba(13, 146, 255, 0.5) !important;
-          box-shadow : 0 3px 6px 0 rgba(13, 146, 255, 0.5) !important;
+  background-color : #7367F0 !important;
+  box-shadow : 0 3px 6px 0 rgba(115, 103, 240, 0.5) !important;
 }
 
 /* cube effect */
@@ -148,21 +139,9 @@
   /* virtual slides  */
   font-size : 1.5rem;
   background-color : #EEEEEE;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  justify-content : center;
+  align-items : center;
 }
 
 .swiper-button-prev, .swiper-button-next, .swiper-container-rtl .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
@@ -177,11 +156,10 @@
 }
 
 .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -190,11 +168,10 @@
 }
 
 .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -203,11 +180,10 @@
 }
 
 .swiper-container-rtl .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -215,11 +191,10 @@
 }
 
 .swiper-container-rtl .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%230d92ff\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
-  -moz-background-size : 44px;
-       background-size : 44px;
+  background-size : 44px;
   color : #6E6B7B;
   width : 44px;
   height : 44px;
@@ -234,22 +209,19 @@
   .swiper-button-prev:after {
     height : 28px;
     width : 28px;
-    -moz-background-size : 24px;
-         background-size : 24px;
+    background-size : 24px;
   }
   .swiper-button-next {
     font-size : 1.286rem;
     top : 55%;
   }
   .swiper-button-next:after {
-    -moz-background-size : 24px;
-         background-size : 24px;
+    background-size : 24px;
   }
   .swiper-centered-slides .swiper-button-next:after, .swiper-centered-slides .swiper-button-prev:after {
     height : 28px;
     width : 28px;
-    -moz-background-size : 18px;
-         background-size : 18px;
+    background-size : 18px;
   }
   .swiper-parallax .swiper-slide {
     padding : 1rem 1.2rem;

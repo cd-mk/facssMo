@@ -1,105 +1,88 @@
 <!DOCTYPE html>
-<html class="loading light-layout" lang="en" data-layout="dark-layout" data-textdirection="ltr">
+<html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
-  <meta name="description" content="Nochitbot">
-  <meta name="keywords" content="Nochitbot">
-  <meta name="author" content="PIXINVENT">
-  <title>Nochitbot - 비대면 치팅방지 솔루션 시험감독관</title>
-  <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
-  <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+  <meta property="og:type" content="website">
+  <meta name="description" content="출퇴근기록 솔루션">
+  <meta name="keywords" content="FACSS, 출근기록, 출퇴근기록">
+  <meta property="og:image" content="../../app-assets/images/common/og-img.jpg">
+  <meta name="author" content="METSAKUUR">
+  <title>FACSS - Dashboard</title>
+  <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/ico/favicon.ico">
 
   <!-- BEGIN: Vendor CSS-->
-  <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
   <!-- END: Vendor CSS-->
 
   <!-- BEGIN: Theme CSS-->
-  <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/components.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/themes/dark-layout.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
 
   <!-- BEGIN: Page CSS-->
-  <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/forms/form-quill-editor.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/pages/app-chat.css">
-  <link rel="stylesheet" type="text/css" href="app-assets/css/pages/app-chat-list.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+  <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/charts/chart-apex.css">
   <!-- END: Page CSS-->
 
   <!-- BEGIN: Custom CSS-->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
   <!-- END: Custom CSS-->
 
 </head>
 <!-- END: Head-->
 
-<body class="m-4">
-  <h1>NoChitBot - 비대면 치팅방지 솔루션 </h1>
-  <hr />
-  <h2>감독관 페이지 (퍼블 완료일 : 5/21)</h2>
-  <table class="table">
-    <colgroup>
-    <col style="width:200px" >
-  </colgroup>
-    <tr>
-      <th>Name</th>
-      <th>Demo</th>
-    </tr>
-    <tr>
-      <td>감독관 - 로그인페이지</td>
-      <td><a href="./html/monitor/monitor-auth-login.html" target="_blank">monitor-auth-login.html</a></td>
-    </tr>
-    <tr>
-      <td>감독관 - 비밀번호 찾기</td>
-      <td><a href="./html/monitor/monitor-auth-forgot-password.html" target="_blank">monitor-auth-reset-forgot.html</a>
-      </td>
-    </tr>
-    <tr>
-      <td>감독관 - 시험목록</td>
-      <td><a href="./html/monitor/monitor-list.html" target="_blank">monitor-list.html</a></td>
-    </tr>
-    <tr>
-      <td>감독관 - 모니터링</td>
-      <td><a href="./html/monitor/monitor-main.html" target="_blank">monitor-main.html</a></td>
-    </tr>
-  </table>
-  <hr />
-  <h2>응시생 페이지 (퍼블 완료일 : 5/28)</h2>
-  <table class="table">
-    <colgroup>
-      <col style="width:200px">
-    </colgroup>
-    <tr>
-      <th>Name</th>
-      <th>Demo</th>
-    </tr>
+<!-- BEGIN: Body-->
 
-    <tr>
-      <td>사전등록 및 테스트안내</td>
-      <td><a href="./html/entrant/face-rec-1.html" target="_blank">face-rec-1.html</a></td>
-    </tr>
-    <tr>
-      <td>얼굴등록</td>
-      <td><a href="./html/entrant/face-regist.html" target="_blank">face-regist.html</a></td>
-    </tr>
-    <tr>
-      <td>접속 인증코드 인증</td>
-      <td><a href="./html/mobile/mobile-connect.html" target="_blank">mobile-connect.html</a></td>
-    </tr>
-    <tr>
-      <td>신분증 등록</td>
-      <td><a href="./html/mobile/id-regist.html" target="_blank">id-regist.html</a></td>
-    </tr>
-    
-  </table>
-  <hr />
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static " data-open="click"
+  data-menu="vertical-menu-modern" data-col="">
+  
+  <div class="sidenav-overlay"></div>
+  <div class="drag-target"></div>
 
+  <!-- BEGIN: Footer-->
+  <footer class="footer footer-static footer-light"></footer>
+
+
+
+  <!-- BEGIN: Vendor JS-->
+  <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+  <!-- BEGIN Vendor JS-->
+
+  <!-- BEGIN: Page Vendor JS-->
+  <script src="../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+  <script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+  <!-- END: Page Vendor JS-->
+
+  <!-- BEGIN: Theme JS-->
+  <script src="../../app-assets/js/core/app-menu.js"></script>
+  <script src="../../app-assets/js/core/app.js"></script>
+  <!-- END: Theme JS-->
+
+  <!-- BEGIN: Page JS-->
+  <script src="../../app-assets/js/scripts/charts/chart-apex.js"></script>
+  <!-- END: Page JS-->
+
+  <script>
+    $(window).on('load', function () {
+      if (feather) {
+        feather.replace({
+          width: 14,
+          height: 14
+        });
+      }
+    })
+  </script>
 </body>
+<!-- END: Body-->
 
 </html>

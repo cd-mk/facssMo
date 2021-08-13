@@ -23,9 +23,7 @@
 }
 
 .card-company-table td .avatar img {
-  -webkit-border-radius : 0;
-     -moz-border-radius : 0;
-          border-radius : 0;
+  border-radius : 0;
 }
 
 .card-browser-states .browser-states:first-child {

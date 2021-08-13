@@ -63,19 +63,19 @@
 }
 
 .slider-primary {
-  background-color : rgba(13, 146, 255, 0.12);
+  background-color : rgba(115, 103, 240, 0.12);
 }
 
 .slider-primary .noUi-connect {
-  background : #0D92FF !important;
+  background : #7367F0 !important;
 }
 
 .slider-primary.noUi-connect {
-  background : #0D92FF !important;
+  background : #7367F0 !important;
 }
 
 .slider-primary .noUi-handle {
-  border-color : #0D92FF !important;
+  border-color : #7367F0 !important;
 }
 
 .slider-secondary {
@@ -111,19 +111,19 @@
 }
 
 .slider-info {
-  background-color : rgba(0, 166, 232, 0.12);
+  background-color : rgba(13, 146, 255, 0.12);
 }
 
 .slider-info .noUi-connect {
-  background : #00A6E8 !important;
+  background : #0D92FF !important;
 }
 
 .slider-info.noUi-connect {
-  background : #00A6E8 !important;
+  background : #0D92FF !important;
 }
 
 .slider-info .noUi-handle {
-  border-color : #00A6E8 !important;
+  border-color : #0D92FF !important;
 }
 
 .slider-warning {

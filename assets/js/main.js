@@ -54,14 +54,14 @@ $(function () {
 });
 
   //확인체크하면 버튼 활성화
-  $('.checkOk[type="checkbox"]').click(function () {
-    var tmpp = $(this).prop('checked');
-    // this를 사용하여 클릭한 checkbox 가 체크되도록 설정
-    if (tmpp) {
-        $(".btn-checkOk").removeClass("disabled");
-    } else {
-        $(".btn-checkOk").addClass("disabled");
-    }
+  $("input[name='checkOk']").change(function () {
+    var lenAll = $("input[name='checkOk']").length;
+    var len = $("input[name='checkOk']:checked").length;
+    if (len === lenAll)
+      $(".btn-checkOk").removeClass("disabled");
+    else
+      $(".btn-checkOk").addClass("disabled");
+
   });
 
 })(window);

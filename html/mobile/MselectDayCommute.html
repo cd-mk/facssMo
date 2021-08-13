@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta property="og:type" content="website">
+    <meta name="description" content="출퇴근기록 솔루션">
+    <meta name="keywords" content="FACSS, 출근기록, 출퇴근기록">
+    <meta property="og:image" content="../../app-assets/images/common/og-img.jpg">
+    <meta name="author" content="METSAKUUR">
+    <title>FACSS - 근태현황 | 근태관리</title>
+    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/ico/favicon.ico">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/charts/chart-apex.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar align-items-center floating-nav navbar-dark navbar-shadow">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item">
+                        <a class="nav-link menu-toggle d-inline-block text-light" href="javascript:void(0);"><i class="ficon text-light" data-feather="menu"></i></a>
+                        <h1 class="brand-name">주)메사쿠어컴퍼니</h1>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav noti-box">
+                <li class="nav-item dropdown dropdown-notification mr-25">
+                    <a class="nav-link" href="javascript:void(0);"
+                        data-toggle="dropdown">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge badge-pill badge-danger badge-up">5</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title mb-0 mr-auto">Notifications</h4>
+                                <div class="badge badge-pill badge-light-primary">6 New</div>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list">
+                            <a class="d-flex" href="javascript:void(0)">
+                                <div class="media d-flex align-items-start">
+                                    <div class="media-body">
+                                        <p class="media-heading"><span class="font-weight-bolder">New
+                                                message</span>&nbsp;received</p><small class="notification-text"> You
+                                            have 10 unread messages</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                </li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="d-block d-xl-none toggle-icon" data-feather="x"></i>
+                        <i class="d-none d-xl-block collapse-toggle-icon" data-feather="disc" data-ticon="disc"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-info">
+                <span class="avatar"><i data-feather="user"></i></span>
+                <span>로그인 해주세요</span>
+                <button type="button" class="btn btn-sm">로그인</button>
+            </div>
+        </div>
+
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="#">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="#">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">커뮤니티</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li>
+                            <a class="d-flex align-items-center" href="#">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">알림</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center" href="#">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">공지사항</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <!-- 
+        page: main 
+        add class : main
+    -->
+    <div class="app-content content main">
+        <div class="content-wrapper">
+            <div class="content-body">
+
+                <div class="info-box">
+                    <div class="row inner-1">
+                        <div class="col">
+                            <div class="media">
+                                <span class="today-date">20</span>
+                                <div class="media-body today-en">
+                                    July<br>
+                                    Tuesday 2021
+                                </div>
+                            </div>
+                            <div class="media">
+                                <span class="today-time">12:29</span>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="media user-login">
+                                메사쿠어관리자님<br>
+                                안녕하세요.
+                                <div class="media-body">
+                                    <div class="avatar">
+                                        <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-box bottom right"><button type="button" class="btn btn-sm round">근태기록 최적화</button></div>
+                        </div>
+                    </div>
+
+                    <div class="row inner-2">
+                        <div class="col">
+                            <strong>전체인원</strong>
+                            <p>40<em>명</em></p>
+                        </div>
+                        <div class="col">
+                            <strong>외근직</strong>
+                            <p>40<em>명</em></p>
+                        </div>
+                        <div class="col">
+                            <strong>재택근무</strong>
+                            <p>40<em>명</em></p>
+                        </div>
+                    </div>
+                    
+                </div>
+               
+                <!-- apex charts section start -->
+                <div class="card section">
+                    <div class="card-header flex-column align-items-start">
+                        <h2 class="card-title">Today's Status</h2>
+                    </div>
+                    <div class="card-body">
+                        <div id="donut-chart"></div>
+                    </div>
+                </div>
+
+                <div class="card section">
+                    <div class="card-header flex-column align-items-start">
+                        <h2 class="card-title">실시간 현황</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="timeline realstatus-box">
+                            <li class="timeline-item">
+                                <!-- 
+                                [상태별 css추가 ]
+                                정상출근 = gowork
+                                정상퇴근 = leavework
+                                지각 = belate
+                                무단결근 = absent
+                                조퇴 = early
+                                휴가 = dayoff
+                                외출 = outside
+                                외출복귀 = return 
+                            -->
+                                <span class="timeline-point timeline-point-indicator gowork"></span>
+                                <div class="timeline-event">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">정상출근</span> 
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">송강</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li class="timeline-item">
+                                <span class="timeline-point timeline-point-indicator leavework"></span>
+                                <div class="timeline-event realstatus-box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">정상퇴근</span>
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">송강</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+                            <li class="timeline-item">
+                                <span class="timeline-point timeline-point-indicator belate"></span>
+                                <div class="timeline-event realstatus-box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">지각</span>
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">송강</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-item">
+                                <span class="timeline-point timeline-point-indicator absent"></span>
+                                <div class="timeline-event realstatus-box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">무단결근</span>
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/10-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">박서준</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-item">
+                                <span class="timeline-point timeline-point-indicator early"></span>
+                                <div class="timeline-event realstatus-box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">조퇴</span>
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/11-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">배수지</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-item">
+                                <span class="timeline-point timeline-point-indicator dayoff"></span>
+                                <div class="timeline-event realstatus-box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">휴가</span>
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/8-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">전지현</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-item">
+                                <span class="timeline-point timeline-point-indicator outside"></span>
+                                <div class="timeline-event realstatus-box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">외출</span>
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/9-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">전여빈</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+                            <li class="timeline-item">
+                                <span class="timeline-point timeline-point-indicator return"></span>
+                                <div class="timeline-event realstatus-box">
+                                    <div class="row">
+                                        <div class="col">
+                                            <span class="status-name">외출복귀</span>
+                                            <span class="status-time">오후 12:00</span>
+                                        </div>
+                                        <div class="col">
+                                            <div class="media status-member">
+                                                <div class="avatar">
+                                                    <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32" />
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="name">송강</p>
+                                                    <p class="dep">Business Hub</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card section">
+                    <div class="card-header flex-column align-items-start">
+                        <h2 class="card-title">공지사항</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="ul-tbl-box board-tbl">
+                            <div class="ul-tbl notice-list">
+                                <!-- 글 목록 불러오기 -->
+                                <div class="ul-tr">
+                                    <div class="ul-td title">
+                                        <a href="#"><span class="fixed-tit">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span></a>
+                                    </div>
+                                    <div class="ul-td regi-date"><span>2021-07-26</span></div>
+                                </div>
+                                <div class="ul-tr">
+                                    <div class="ul-td title">
+                                        <a href="#"><span class="fixed-tit">개인정보처리방침변경 안내</span></a>
+                                    </div>
+                                    <div class="ul-td regi-date"><span>2021-07-21</span></div>
+                                </div>
+                                <div class="ul-tr">
+                                    <div class="ul-td title">
+                                        <a href="#"><span class="fixed-tit">개인정보처리방침변경 안내</span></a>
+                                    </div>
+                                    <div class="ul-td regi-date"><span>2021-07-21</span></div>
+                                </div>
+                                <!-- //글 목록 불러오기 -->
+                            </div>
+                        </div>
+                        <div class="pagination-wrap">
+                            <div class="pagination">
+                                <button class="first"><span class="blind">처음으로</span></button>
+                                <button class="prev"><span class="blind">이전</span></button>
+                                <span class="num-wrap">
+                                    <button class="num active">1</button>
+                                    <button class="num">2</button>
+                                </span>
+                                <button class="next"><span class="blind">다음</span></button>
+                                <button class="end"><span class="blind">마지막으로</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 이달의 우수사원 -->
+                <div class="card section event-box">
+                    <div class="card-header flex-column align-items-start">
+                        <h2 class="card-title">이달의 우수사원</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="media status-member">
+                            <div class="rank">1</div>
+                            <div class="avatar">
+                                <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32" />
+                            </div>
+                            <div class="media-body">
+                                <p class="name">송강</p>
+                                <p class="dep">Business Hub</p>
+                            </div>
+                            <div class="media-body">
+                                <p class="mb-50">194점</p>
+                                <div class="progress progress-bar-warning" style="height: 6px">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media status-member">
+                            <div class="rank">2</div>
+                            <div class="avatar">
+                                <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32" />
+                            </div>
+                            <div class="media-body">
+                                <p class="name">송강</p>
+                                <p class="dep">Business Hub</p>
+                            </div>
+                            <div class="media-body">
+                                <p class="mb-50">120점</p>
+                                <div class="progress progress-bar-warning" style="height: 6px">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media status-member">
+                            <div class="rank">3</div>
+                            <div class="avatar">
+                                <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" height="32" width="32" />
+                            </div>
+                            <div class="media-body">
+                                <p class="name">송강</p>
+                                <p class="dep">Business Hub</p>
+                            </div>
+                            <div class="media-body">
+                                <p class="mb-50">100점</p>
+                                <div class="progress progress-bar-warning" style="height: 6px">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="60" aria-valuemax="100" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light"></footer>
+
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/charts/chart-apex.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

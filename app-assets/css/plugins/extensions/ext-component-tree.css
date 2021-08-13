@@ -22,13 +22,11 @@
 
 .jstree .jstree-container-ul .jstree-anchor.jstree-clicked, .jstree .jstree-container-ul .jstree-anchor.jstree-hovered {
   background : transparent;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .jstree .jstree-container-ul .jstree-node .jstree-wholerow-clicked {
-  background : rgba(13, 146, 255, 0.1);
+  background : rgba(115, 103, 240, 0.1);
 }
 
 .jstree .jstree-container-ul .jstree-node .jstree-wholerow-hovered:not(.jstree-wholerow-clicked) {
@@ -38,9 +36,7 @@
 .vakata-context.jstree-contextmenu {
   background : #FFFFFF;
   border : 0;
-  -webkit-box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
-     -moz-box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
-          box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
+  box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
 }
 
 .vakata-context.jstree-contextmenu li a {
@@ -55,9 +51,7 @@
 
 .vakata-context.jstree-contextmenu li.vakata-context-hover > a {
   background-color : #F8F8F8;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .vakata-context.jstree-contextmenu li.vakata-context-separator a {
@@ -77,9 +71,7 @@
 .vakata-context.jstree-contextmenu li ul {
   background : #FFFFFF;
   border : 0;
-  -webkit-box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
-     -moz-box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
-          box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
+  box-shadow : 0 0 50px 0 rgba(34, 41, 47, 0.1);
 }
 
 .vakata-context.jstree-contextmenu .vakata-contextmenu-sep {
@@ -92,9 +84,7 @@
 
 .dark-layout .vakata-context.jstree-contextmenu {
   background : #283046;
-  -webkit-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
-     -moz-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
-          box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
+  box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
 }
 
 .dark-layout .vakata-context.jstree-contextmenu li a {
@@ -110,12 +100,10 @@
 }
 
 .dark-layout .vakata-context.jstree-contextmenu li.vakata-contextmenu-disabled a {
-  color : #8F95A5;
+  color : #676D7D;
 }
 
 .dark-layout .vakata-context.jstree-contextmenu li ul {
   background : #283046;
-  -webkit-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
-     -moz-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
-          box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
+  box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
 }

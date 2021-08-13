@@ -19,12 +19,8 @@
   width : 8.92rem;
   border : 0.357rem solid #FFFFFF;
   background-color : #FFFFFF;
-  -webkit-border-radius : 0.428rem;
-     -moz-border-radius : 0.428rem;
-          border-radius : 0.428rem;
-  -webkit-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
-     -moz-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
-          box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  border-radius : 0.428rem;
+  box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
 }
 
 #user-profile .profile-header .profile-header-nav .navbar {
@@ -58,16 +54,11 @@
 }
 
 #user-profile .profile-latest-img {
-  -webkit-transition : all 0.2s ease-in-out;
-     -moz-transition : all 0.2s ease-in-out;
-          transition : all 0.2s ease-in-out;
+  transition : all 0.2s ease-in-out;
 }
 
 #user-profile .profile-latest-img:hover {
-  -webkit-transform : translateY(-4px) scale(1.2);
-     -moz-transform : translateY(-4px) scale(1.2);
-      -ms-transform : translateY(-4px) scale(1.2);
-          transform : translateY(-4px) scale(1.2);
+  transform : translateY(-4px) scale(1.2);
   z-index : 10;
 }
 

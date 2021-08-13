@@ -1,61 +1,31 @@
 .chat-application .content-area-wrapper {
   border : 1px solid #EBE9F1;
-  -webkit-border-radius : 0.428rem;
-     -moz-border-radius : 0.428rem;
-          border-radius : 0.428rem;
+  border-radius : 0.428rem;
 }
 
 .chat-application .chat-profile-sidebar {
   border-right : 1px solid #EBE9F1;
   height : inherit;
   width : 360px;
-  -webkit-border-radius : 0.25rem;
-     -moz-border-radius : 0.25rem;
-          border-radius : 0.25rem;
-  -webkit-border-top-right-radius : 0;
-  -moz-border-radius-topright : 0;
-          border-top-right-radius : 0;
-  -webkit-border-bottom-right-radius : 0;
-  -moz-border-radius-bottomright : 0;
-          border-bottom-right-radius : 0;
+  border-radius : 0.25rem;
+  border-top-right-radius : 0;
+  border-bottom-right-radius : 0;
   position : absolute;
   background-color : #FFFFFF;
-  -webkit-transform : translateX(-110%);
-     -moz-transform : translateX(-110%);
-      -ms-transform : translateX(-110%);
-          transform : translateX(-110%);
-  -webkit-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-     -moz-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-          transition : all 0.3s ease, background 0s, border 0s, color 0s;
+  transform : translateX(-110%);
+  transition : all 0.3s ease, background 0s, border 0s, color 0s;
   z-index : 6;
 }
 
 .chat-application .chat-profile-sidebar.show {
-  -webkit-transform : translateX(0);
-     -moz-transform : translateX(0);
-      -ms-transform : translateX(0);
-          transform : translateX(0);
-  -webkit-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-     -moz-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-          transition : all 0.3s ease, background 0s, border 0s, color 0s;
+  transform : translateX(0);
+  transition : all 0.3s ease, background 0s, border 0s, color 0s;
 }
 
 .chat-application .chat-profile-sidebar .chat-profile-header {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
+  display : flex;
+  align-items : center;
+  justify-content : center;
   height : 200px;
   text-align : center;
 }
@@ -65,9 +35,7 @@
 }
 
 .chat-application .chat-profile-sidebar .profile-sidebar-area {
-  height : -webkit-calc(100% - 200px);
-  height :    -moz-calc(100% - 200px);
-  height :         calc(100% - 200px);
+  height : calc(100% - 200px);
   position : relative;
   padding : 0 2rem 1.5rem;
 }
@@ -94,19 +62,11 @@
   border-right : 1px solid #EBE9F1;
   height : inherit;
   width : 360px;
-  -webkit-border-radius : 0.25rem;
-     -moz-border-radius : 0.25rem;
-          border-radius : 0.25rem;
-  -webkit-border-top-right-radius : 0;
-  -moz-border-radius-topright : 0;
-          border-top-right-radius : 0;
-  -webkit-border-bottom-right-radius : 0;
-  -moz-border-radius-bottomright : 0;
-          border-bottom-right-radius : 0;
+  border-radius : 0.25rem;
+  border-top-right-radius : 0;
+  border-bottom-right-radius : 0;
   margin : 0;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .chat-application .sidebar-content .sidebar-close-icon {
@@ -124,11 +84,7 @@
   border-bottom : 1px solid #EBE9F1;
   padding : 0 1.286rem;
   height : 65px;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
+  display : flex;
 }
 
 .chat-application .sidebar-content .chat-fixed-search .sidebar-profile-toggle .avatar {
@@ -137,25 +93,19 @@
 
 .chat-application .sidebar-content .chat-fixed-search .input-group:focus-within {
   background-color : transparent;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .chat-application .sidebar-content .chat-list-title {
-  color : #0D92FF;
+  color : #7367F0;
   margin : 2rem 1.286rem 0.5rem;
 }
 
 .chat-application .sidebar-content .chat-user-list-wrapper {
   position : relative;
-  height : -webkit-calc(100% - 65px);
-  height :    -moz-calc(100% - 65px);
-  height :         calc(100% - 65px);
+  height : calc(100% - 65px);
   width : 360px;
-  -webkit-border-radius : 0;
-     -moz-border-radius : 0;
-          border-radius : 0;
+  border-radius : 0;
 }
 
 .chat-application .sidebar-content .chat-user-list-wrapper .avatar {
@@ -168,9 +118,7 @@
 }
 
 .chat-application .sidebar-content .chat-user-list-wrapper .contact-list .chat-info {
-  width : -webkit-calc(100% - 46px);
-  width :    -moz-calc(100% - 46px);
-  width :         calc(100% - 46px);
+  width : calc(100% - 46px);
   padding-right : 0;
 }
 
@@ -189,19 +137,13 @@
 }
 
 .chat-application .sidebar-content .chat-user-list-wrapper li {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
+  display : flex;
   padding : 0.786rem 1.286rem;
 }
 
 .chat-application .sidebar-content .chat-user-list-wrapper li .chat-info {
   margin-top : 0.3rem;
-  width : -webkit-calc(100% - 46px - 46px);
-  width :    -moz-calc(100% - 46px - 46px);
-  width :         calc(100% - 46px - 46px);
+  width : calc(100% - 46px - 46px);
   padding : 0 0.75rem;
 }
 
@@ -219,9 +161,7 @@
 }
 
 .chat-application .sidebar-content .chat-user-list-wrapper li.active {
-  background-image : -webkit-linear-gradient(10deg, #0D92FF, #40A9FF);
-  background-image :    -moz-linear-gradient(10deg, #0D92FF, #40A9FF);
-  background-image :         linear-gradient(80deg, #0D92FF, #40A9FF);
+  background-image : linear-gradient(80deg, #7367F0, #9E95F5);
   background-repeat : repeat-x;
 }
 
@@ -238,65 +178,39 @@
 }
 
 .chat-application .chat-app-window .start-chat-area, .chat-application .chat-app-window .user-chats {
-  background-color : #f2f9ff;
+  background-color : #F2F9FF;
   background-repeat : repeat;
-  -moz-background-size : 210px;
-       background-size : 210px;
+  background-size : 210px;
 }
 
 .chat-application .chat-app-window .user-chats-all {
-  background-color : #f2f9ff;
+  background-color : #F2F9FF;
   background-repeat : repeat;
-  -moz-background-size : 210px;
-       background-size : 210px;
+  background-size : 210px;
 }
 
 .chat-application .chat-app-window .start-chat-area {
   height : inherit;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
-  -webkit-box-orient : vertical;
-  -webkit-box-direction : normal;
-  -webkit-flex-direction : column;
-     -moz-box-orient : vertical;
-     -moz-box-direction : normal;
-      -ms-flex-direction : column;
-          flex-direction : column;
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  flex-direction : column;
 }
 
 .chat-application .chat-app-window .start-chat-area .start-chat-icon, .chat-application .chat-app-window .start-chat-area .start-chat-text {
   background : #FFFFFF;
-  -webkit-box-shadow : 0 4px 8px 0 rgba(34, 41, 47, 0.12) !important;
-     -moz-box-shadow : 0 4px 8px 0 rgba(34, 41, 47, 0.12) !important;
-          box-shadow : 0 4px 8px 0 rgba(34, 41, 47, 0.12) !important;
+  box-shadow : 0 4px 8px 0 rgba(34, 41, 47, 0.12) !important;
   color : #6E6B7B;
 }
 
 .chat-application .chat-app-window .start-chat-area .start-chat-text {
   padding : 0.5rem 1rem;
-  -webkit-border-radius : -webkit-calc(0.357rem * 4);
-     -moz-border-radius :    -moz-calc(0.357rem * 4);
-          border-radius :         calc(0.357rem * 4);
+  border-radius : calc(0.357rem * 4);
   cursor : pointer;
 }
 
 .chat-application .chat-app-window .start-chat-area .start-chat-icon {
-  -webkit-border-radius : 50%;
-     -moz-border-radius : 50%;
-          border-radius : 50%;
+  border-radius : 50%;
   padding : 2rem;
 }
 
@@ -308,24 +222,13 @@
 
 .chat-application .user-profile-sidebar {
   width : 360px;
-  -webkit-border-radius : 0.25rem;
-     -moz-border-radius : 0.25rem;
-          border-radius : 0.25rem;
-  -webkit-border-top-left-radius : 0;
-  -moz-border-radius-topleft : 0;
-          border-top-left-radius : 0;
-  -webkit-border-bottom-left-radius : 0;
-  -moz-border-radius-bottomleft : 0;
-          border-bottom-left-radius : 0;
+  border-radius : 0.25rem;
+  border-top-left-radius : 0;
+  border-bottom-left-radius : 0;
   background-color : #FFFFFF;
   position : absolute;
-  -webkit-transform : translateX(110%);
-     -moz-transform : translateX(110%);
-      -ms-transform : translateX(110%);
-          transform : translateX(110%);
-  -webkit-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-     -moz-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-          transition : all 0.3s ease, background 0s, border 0s, color 0s;
+  transform : translateX(110%);
+  transition : all 0.3s ease, background 0s, border 0s, color 0s;
   z-index : 6;
   right : 0;
   bottom : 0;
@@ -333,40 +236,17 @@
 }
 
 .chat-application .user-profile-sidebar.show {
-  -webkit-transform : translateX(0%);
-     -moz-transform : translateX(0%);
-      -ms-transform : translateX(0%);
-          transform : translateX(0%);
-  -webkit-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-     -moz-transition : all 0.3s ease, background 0s, border 0s, color 0s;
-          transition : all 0.3s ease, background 0s, border 0s, color 0s;
+  transform : translateX(0%);
+  transition : all 0.3s ease, background 0s, border 0s, color 0s;
 }
 
 .chat-application .user-profile-sidebar .user-profile-header .header-profile-sidebar {
   height : 200px;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
-  -webkit-box-pack : center;
-  -webkit-justify-content : center;
-     -moz-box-pack : center;
-  -ms-flex-pack : center;
-          justify-content : center;
+  display : flex;
+  align-items : center;
+  justify-content : center;
   text-align : center;
-  -webkit-box-orient : vertical;
-  -webkit-box-direction : normal;
-  -webkit-flex-direction : column;
-     -moz-box-orient : vertical;
-     -moz-box-direction : normal;
-      -ms-flex-direction : column;
-          flex-direction : column;
+  flex-direction : column;
   width : 100%;
 }
 
@@ -376,9 +256,7 @@
 
 .chat-application .user-profile-sidebar .user-profile-sidebar-area {
   position : relative;
-  height : -webkit-calc(100% - 200px);
-  height :    -moz-calc(100% - 200px);
-  height :         calc(100% - 200px);
+  height : calc(100% - 200px);
   padding : 0 2rem 1.5rem;
 }
 
@@ -387,24 +265,14 @@
     width : 100%;
   }
   .chat-application .sidebar-content {
-    -webkit-transform : translateX(-110%);
-       -moz-transform : translateX(-110%);
-        -ms-transform : translateX(-110%);
-            transform : translateX(-110%);
-    -webkit-transition : all 0.3s ease-in-out;
-       -moz-transition : all 0.3s ease-in-out;
-            transition : all 0.3s ease-in-out;
+    transform : translateX(-110%);
+    transition : all 0.3s ease-in-out;
     position : absolute;
     z-index : 5;
   }
   .chat-application .sidebar-content.show {
-    -webkit-transform : translateX(0);
-       -moz-transform : translateX(0);
-        -ms-transform : translateX(0);
-            transform : translateX(0);
-    -webkit-transition : all 0.3s ease;
-       -moz-transition : all 0.3s ease;
-            transition : all 0.3s ease;
+    transform : translateX(0);
+    transition : all 0.3s ease;
   }
 }
 

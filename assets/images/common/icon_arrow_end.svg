@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="✔️-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-Data-/-BTN-/-First" transform="translate(-11.000000, -14.000000)" fill="#222222" fill-rule="nonzero">
+            <g id="Group" transform="translate(11.344271, 14.655729)">
+                <polygon id="Path-10" transform="translate(11.220911, 5.565182) rotate(90.000000) translate(-11.220911, -5.565182) " points="15.6557288 1.34427119 16.7860923 2.17027266 11.2209105 9.78609228 5.65572881 2.17027266 6.78609228 1.34427119 11.2209105 7.41227193"></polygon>
+                <polygon id="Path-10" transform="translate(4.220911, 5.565182) rotate(90.000000) translate(-4.220911, -5.565182) " points="8.65572881 1.34427119 9.78609228 2.17027266 4.22091054 9.78609228 -1.34427119 2.17027266 -0.21390772 1.34427119 4.22091054 7.41227193"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

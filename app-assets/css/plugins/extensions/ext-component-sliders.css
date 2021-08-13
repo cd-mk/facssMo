@@ -1,18 +1,12 @@
 .noUi-target {
-  background-color : rgba(13, 146, 255, 0.12);
+  background-color : rgba(115, 103, 240, 0.12);
   border-width : 0;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
-  -webkit-border-radius : 1rem;
-     -moz-border-radius : 1rem;
-          border-radius : 1rem;
+  box-shadow : none;
+  border-radius : 1rem;
 }
 
 .noUi-target.noUi-connect {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .noUi-horizontal {
@@ -48,15 +42,11 @@
 }
 
 .noUi-handle {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
   border : none;
-  -webkit-border-radius : 50%;
-     -moz-border-radius : 50%;
-          border-radius : 50%;
+  border-radius : 50%;
   background : #FFFFFF;
-  border : 2px solid #0D92FF;
+  border : 2px solid #7367F0;
 }
 
 .noUi-handle:after, .noUi-handle:before {
@@ -64,17 +54,12 @@
 }
 
 .noUi-connect {
-  background : #0D92FF;
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  background : #7367F0;
+  box-shadow : none;
 }
 
 .noUi-tooltip {
-  -webkit-transform : translate(-10%, -50%);
-     -moz-transform : translate(-10%, -50%);
-      -ms-transform : translate(-10%, -50%);
-          transform : translate(-10%, -50%);
+  transform : translate(-10%, -50%);
   font-size : 0.857rem;
   border : none;
   color : #6E6B7B;
@@ -115,8 +100,7 @@
 }
 
 _:-ms-lang(x), .slider-select {
-  -ms-flex : 0 0 10%;
-      flex : 0 0 10%;
+  flex : 0 0 10%;
   max-width : 10%;
 }
 

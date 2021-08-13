@@ -7,7 +7,7 @@
 }
 
 .dark-layout .jq-ry-container:not(.multi-color-ratings) .jq-ry-normal-group i, .dark-layout .jq-ry-container:not(.multi-color-ratings) .jq-ry-normal-group svg {
-  fill : #8F95A5;
+  fill : #676D7D;
 }
 
 [data-textdirection='rtl'] .jq-ry-container:not(.multi-color-ratings) .jq-ry-normal-group i, [data-textdirection='rtl'] .jq-ry-container:not(.multi-color-ratings) .jq-ry-normal-group svg {
@@ -19,5 +19,5 @@
 }
 
 [data-textdirection='rtl'] .dark-layout .jq-ry-container:not(.multi-color-ratings) .jq-ry-rated-group i, [data-textdirection='rtl'] .dark-layout .jq-ry-container:not(.multi-color-ratings) .jq-ry-rated-group svg {
-  fill : #8F95A5;
+  fill : #676D7D;
 }

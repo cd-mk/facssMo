@@ -4,11 +4,7 @@
 }
 
 .kanban-application .kanban-wrapper .kanban-container {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
+  display : flex;
   width : -webkit-max-content !important;
   width :    -moz-max-content !important;
   width :         max-content !important;
@@ -26,21 +22,9 @@
 }
 
 .kanban-application .kanban-wrapper .kanban-container .kanban-board .kanban-board-header {
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-pack : justify;
-  -webkit-justify-content : space-between;
-     -moz-box-pack : justify;
-  -ms-flex-pack : justify;
-          justify-content : space-between;
-  -webkit-box-align : center;
-  -webkit-align-items : center;
-     -moz-box-align : center;
-  -ms-flex-align : center;
-          align-items : center;
+  display : flex;
+  justify-content : space-between;
+  align-items : center;
   padding-left : 0;
   padding-right : 0;
 }
@@ -54,9 +38,7 @@
   max-width : 13rem;
   white-space : nowrap;
   overflow : hidden;
-  -webkit-border-radius : 0.428rem;
-     -moz-border-radius : 0.428rem;
-          border-radius : 0.428rem;
+  border-radius : 0.428rem;
 }
 
 .kanban-application .kanban-wrapper .kanban-container .kanban-board .kanban-board-header .kanban-title-board:hover, .kanban-application .kanban-wrapper .kanban-container .kanban-board .kanban-board-header .kanban-title-board:focus {
@@ -85,39 +67,21 @@
 }
 
 .kanban-application .kanban-wrapper .kanban-container .kanban-board .kanban-title-button:focus {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .kanban-application .kanban-wrapper .kanban-container .kanban-board .kanban-item {
   position : relative;
-  display : -webkit-box;
-  display : -webkit-flex;
-  display :    -moz-box;
-  display : -ms-flexbox;
-  display :         flex;
-  -webkit-box-orient : vertical;
-  -webkit-box-direction : normal;
-  -webkit-flex-direction : column;
-     -moz-box-orient : vertical;
-     -moz-box-direction : normal;
-      -ms-flex-direction : column;
-          flex-direction : column;
+  display : flex;
+  flex-direction : column;
   background : #FFFFFF;
   width : 18.55rem;
   padding : 1rem 1.2rem;
   margin-bottom : 1.5rem;
-  -webkit-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
-     -moz-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
-          box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
   cursor : pointer;
-  -webkit-border-radius : 0.428rem;
-     -moz-border-radius : 0.428rem;
-          border-radius : 0.428rem;
-  -webkit-transition : all 0.3s cubic-bezier(0.23, 1, 0.32, 1), background 0s, color 0s, border 0s;
-     -moz-transition : all 0.3s cubic-bezier(0.23, 1, 0.32, 1), background 0s, color 0s, border 0s;
-          transition : all 0.3s cubic-bezier(0.23, 1, 0.32, 1), background 0s, color 0s, border 0s;
+  border-radius : 0.428rem;
+  transition : all 0.3s cubic-bezier(0.23, 1, 0.32, 1), background 0s, color 0s, border 0s;
 }
 
 .kanban-application .kanban-wrapper .kanban-container .kanban-board .kanban-item i, .kanban-application .kanban-wrapper .kanban-container .kanban-board .kanban-item svg {

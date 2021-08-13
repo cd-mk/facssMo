@@ -30,14 +30,12 @@
   font-family : 'Noto Sans KR', Helvetica, Arial, serif !important;
   fill : #6E6B7B;
   font-weight : 400;
-  -webkit-filter : none;
-          filter : none;
+  filter : none;
 }
 
 .apexcharts-canvas .apexcharts-pie-label {
   fill : white;
-  -webkit-filter : none;
-          filter : none;
+  filter : none;
 }
 
 .apexcharts-canvas .apexcharts-pie .apexcharts-pie-series .apexcharts-pie-area {
@@ -49,9 +47,7 @@
 }
 
 .apexcharts-canvas .apexcharts-marker {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .apexcharts-canvas .apexcharts-legend-series + .apexcharts-legend-series {

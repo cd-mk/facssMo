@@ -1,13 +1,10 @@
 .faq-search {
-  -moz-background-size : cover;
-       background-size : cover;
-  background-color : rgba(13, 146, 255, 0.12) !important;
+  background-size : cover;
+  background-color : rgba(115, 103, 240, 0.12) !important;
 }
 
 .faq-search .faq-search-input .input-group:focus-within {
-  -webkit-box-shadow : none;
-     -moz-box-shadow : none;
-          box-shadow : none;
+  box-shadow : none;
 }
 
 .faq-contact .faq-contact-card {
