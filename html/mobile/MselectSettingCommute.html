@@ -11,7 +11,7 @@
     <meta name="keywords" content="FACSS, 출근기록, 출퇴근기록">
     <meta property="og:image" content="../../app-assets/images/common/og-img.jpg">
     <meta name="author" content="METSAKUUR">
-    <title>FACSS - 근태현황 | 근태관리</title>
+    <title>FACSS - 기본설정</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/ico/favicon.ico">
 
@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
-    
+
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
+
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
@@ -176,38 +177,68 @@
 
     <!-- BEGIN: Content-->
     <!-- 
-        page: sub 
-        add class : sub
+        page: main 
+        add class : main
     -->
     <div class="app-content content sub">
         <div class="content-wrapper">
             <div class="content-body">
                 <div class="sub-tit">
-                    <h2>근태현황</h2>
+                    <h2>기본설정</h2>
                 </div>
-                <!-- apex charts section start -->
+
                 <div class="card section">
+                    <div class="card-header flex-column align-items-start">
+                        <h2 class="card-title">얼굴인식 인증 근태 설정</h2>
+                    </div>
                     <div class="card-body">
-                        2021-07-20(화)
-                    </div>
-                </div>
-                <!-- frequent answer and question  collapse  -->
-                <div class="collapse-margin collapse-icon mt-2" id="faq-payment-qna">
-                    <div class="card">
-                        <div class="card-header" id="paymentOne" data-toggle="collapse" role="button" data-target="#faq-payment-one"
-                            aria-expanded="false" aria-controls="faq-payment-one">
-                            <span class="lead collapse-title">
-                                결근 <span class="badge badge-pill badge-danger">5</span>
-                            </span>
-                        </div>
-                
-                        <div id="faq-payment-one" class="collapse" aria-labelledby="paymentOne" data-parent="#faq-payment-qna">
-                            <div class="card-body">
-                               f
+                        <form class="setting-box">
+                           
+                            <div class="row">
+                                <div class="col-5">얼굴인식 인증 사용</div>
+                                <div class="col-7">
+                                    <div class="custom-control custom-control-primary custom-switch">
+                                        <input type="checkbox" checked class="custom-control-input" id="customSwitch3" />
+                                        <label class="custom-control-label" for="customSwitch3"></label>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="row">
+                                <label for="inputEmail3" class="col-5 col-form-label">Email</label>
+                                <div class="col-7">
+                                    <select class="form-control" id="basicSelect">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    <p class="noti">최대 3개까지 등록 가능</p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
+
+                <div class="card section">
+                    <div class="card-header flex-column align-items-start">
+                        <h2 class="card-title">위치기반 근태 설정</h2>
+                    </div>
+                    <div class="card-body">
+                        <form class="setting-box">
+                
+                            <div class="row">
+                                <div class="col-5">위치기반 인증 사용</div>
+                                <div class="col-7">
+                                    <!-- label for + input id name 일치해야 함 -->
+                                    <div class="custom-control custom-control-primary custom-switch">
+                                        <input type="checkbox" checked class="custom-control-input" id="customSwitch2" />
+                                        <label class="custom-control-label" for="customSwitch2"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

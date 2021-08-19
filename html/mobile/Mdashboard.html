@@ -20,13 +20,17 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
-
+    
     <!-- BEGIN: Theme CSS-->
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
+
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
@@ -43,7 +47,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static " data-open="click" data-menu="vertical-menu-modern" data-col="">
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static" data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar align-items-center floating-nav navbar-dark navbar-shadow">
@@ -51,7 +55,7 @@
             <div class="bookmark-wrapper d-flex align-items-center">
                 <ul class="nav navbar-nav d-xl-none">
                     <li class="nav-item">
-                        <a class="nav-link menu-toggle d-inline-block text-light" href="javascript:void(0);"><i class="ficon text-light" data-feather="menu"></i></a>
+                        <a class="nav-link menu-toggle d-inline-block text-light" href="./Mdashboard.html"><i class="ficon text-light" data-feather="menu"></i></a>
                         <h1 class="brand-name">주)메사쿠어컴퍼니</h1>
                     </li>
                 </ul>
@@ -104,8 +108,8 @@
             </ul>
             <div class="login-info">
                 <span class="avatar"><i data-feather="user"></i></span>
-                <span>로그인 해주세요</span>
-                <button type="button" class="btn btn-sm">로그인</button>
+                <span>METSAKUUR</span>
+                <a href="./login.html" class="btn btn-sm">로그아웃</a>
             </div>
         </div>
 
@@ -113,26 +117,53 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class=" nav-item">
-                    <a class="d-flex align-items-center" href="#">
+                    <a class="d-flex align-items-center" href="./Mdashboard.html">
                         <span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span>
                     </a>
                 </li>
                 <li class=" nav-item">
-                    <a class="d-flex align-items-center" href="#">
+                    <a class="d-flex align-items-center" href="./MselectDayCommute.html">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">근태관리</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li>
+                            <a class="d-flex align-items-center" href="./MselectDayCommute.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">근태현황</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center" href="./MselectSettingCommute.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">기본설정</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center" href="./MinsertWorkGroup.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">근무유형관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="./MselectAlert.html">
                         <span class="menu-title text-truncate" data-i18n="Dashboards">커뮤니티</span>
                     </a>
                     <ul class="menu-content">
                         <li>
-                            <a class="d-flex align-items-center" href="#">
+                            <a class="d-flex align-items-center" href="./MselectAlert.html">
                                 <i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">알림</span>
                             </a>
                         </li>
                         <li>
-                            <a class="d-flex align-items-center" href="#">
+                            <a class="d-flex align-items-center" href="./MselectNotice.html">
                                 <i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="eCommerce">공지사항</span>
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="./MselectUser.html">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">사용자관리</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -417,41 +448,41 @@
                         <h2 class="card-title">공지사항</h2>
                     </div>
                     <div class="card-body">
-                        <div class="ul-tbl-box board-tbl">
-                            <div class="ul-tbl notice-list">
+                        <div class="ul-tbl-box notice-list">
+                            <ul>
                                 <!-- 글 목록 불러오기 -->
-                                <div class="ul-tr">
-                                    <div class="ul-td title">
-                                        <a href="#"><span class="fixed-tit">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span></a>
-                                    </div>
-                                    <div class="ul-td regi-date"><span>2021-07-26</span></div>
-                                </div>
-                                <div class="ul-tr">
-                                    <div class="ul-td title">
-                                        <a href="#"><span class="fixed-tit">개인정보처리방침변경 안내</span></a>
-                                    </div>
-                                    <div class="ul-td regi-date"><span>2021-07-21</span></div>
-                                </div>
-                                <div class="ul-tr">
-                                    <div class="ul-td title">
-                                        <a href="#"><span class="fixed-tit">개인정보처리방침변경 안내</span></a>
-                                    </div>
-                                    <div class="ul-td regi-date"><span>2021-07-21</span></div>
-                                </div>
+                                <li>
+                                    <a href="#url">
+                                        <div class="inner-box">
+                                            <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
+                                        </div>
+                                        <div class="inner-box small line">
+                                            <div class="regi-date">2021-07-26</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#url">
+                                        <div class="inner-box">
+                                            <span class="title">개인정보처리방침변경 안내</span>
+                                        </div>
+                                        <div class="inner-box small line">
+                                            <div class="regi-date">2021-07-26</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#url">
+                                        <div class="inner-box">
+                                            <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
+                                        </div>
+                                        <div class="inner-box small line">
+                                            <div class="regi-date">2021-07-26</div>
+                                        </div>
+                                    </a>
+                                </li>
                                 <!-- //글 목록 불러오기 -->
-                            </div>
-                        </div>
-                        <div class="pagination-wrap">
-                            <div class="pagination">
-                                <button class="first"><span class="blind">처음으로</span></button>
-                                <button class="prev"><span class="blind">이전</span></button>
-                                <span class="num-wrap">
-                                    <button class="num active">1</button>
-                                    <button class="num">2</button>
-                                </span>
-                                <button class="next"><span class="blind">다음</span></button>
-                                <button class="end"><span class="blind">마지막으로</span></button>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -542,6 +573,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <!-- 수정할때는 이경로에서 수정 후 컴파일 (gulp) src/js/scripts/charts/  -->
     <script src="../../app-assets/js/scripts/charts/chart-apex.js"></script>
     <!-- END: Page JS-->
 

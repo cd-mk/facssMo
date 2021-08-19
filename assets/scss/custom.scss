@@ -133,8 +133,6 @@ a:hover {
   color :$primary;
   text-decoration : none;
 }
-*:focus { position: relative; outline: none; box-shadow:none;  -webkit-box-shadow:none;}
-button {padding:0;border:none;cursor:pointer;font-family:inherit;background:none;border-radius:0;}
 
 /* common */
 [class*="-box"] {
@@ -186,7 +184,12 @@ button {padding:0;border:none;cursor:pointer;font-family:inherit;background:none
   max-width:1400px;
   margin: 0 auto;
 }
-
+.content-wrapper {
+  height:100%;
+}
+.content-body {
+  flex-direction: column;
+}
 /* common end =============== */
 .card.section {
   margin-bottom:1.5rem;
@@ -201,6 +204,7 @@ button {padding:0;border:none;cursor:pointer;font-family:inherit;background:none
         margin:0;
         width:100% !important;
         border-radius: 0;
+        min-height:60px;
     }
 }
 .navbar-dark {
@@ -357,70 +361,77 @@ button {padding:0;border:none;cursor:pointer;font-family:inherit;background:none
 /* 공지사항 */
 .ul-tbl-box {
   border-top: 2px solid #000;
-  .ul-tr {
-    position: relative;
-    display: block;
-    padding: 18px 0;
-    border-bottom: 1px solid #ebebeb;
+  .custom-checkbox + a {
+    padding-left:30px;
   }
-  .ul-tbl {
-   .ul-td {
-     &.title {
-       span {
-          font-size: 14px;
-          line-height: 18px;
+    ul {
+      padding:0;
+      li {
+        position: relative;
+        list-style: none;
+        padding: 18px 0 18px;
+        border-bottom: 1px solid #ebebeb;
+        .custom-checkbox {
+          position:absolute;
+          left:0;
         }
         a {
-          float: none;
-          margin-right: 0;
+          display: inline-block;
           width: 100%;
-          font-size: 16px;
-          line-height: 21px;
-        }
-      }
-      span {
-      font-size: 12px;
-      line-height: 16px;
-      }
-      &.regi-date {
-          span {
-            font-size: 12px;
-            line-height: 16px;
-            display: inline-block;
-            position: relative;
-            padding-top:20px;
-            &::before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top:12px;
-              width: 24px;
-              height: 1px;
-              background-color: #aaa;
+          .inner-box {
+            .title {
+              display: block;
+              font-size: 14px;
+              line-height: 18px;
+              width:100%;
+              padding:0;
+              overflow:hidden;
+              text-overflow:ellipsis;
+              white-space:nowrap;
+            }
+            &.small {
+              font-size: 13px;
+              line-height: 16px;
+              margin-top:10px;
+              color:#777;
+              .col {
+                &.info {
+
+                }
+                &.regi-date {
+                  text-align: right;
+                  padding-right:34px;
+                }
+              }
+            }
+            &.line {
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top:0;
+                width: 24px;
+                height: 1px;
+                background-color: #aaa;
+              }
+              .regi-date {
+                padding-top:10px;
+              }
+            }
           }
         }
       }
-    }
   }
 }
-/******** pagination ********/
-.pagination-wrap { text-align: center; margin: 40px 0 10px; }
-.pagination { position: relative; display:inline-block; }
-.pagination .num-wrap { float: left; margin: 0 12px; }
-.pagination .num-wrap .num { font-size: 16px; font-family: 'IBM', Helvetica, sans-serif; }
-.pagination button {position: relative; display: block; float: left; width: 28px; height: 28px; color: #AAAAAA; font-size: 16px; font-weight:700; margin: 0px 2px;}
-.pagination button.active { color: #000000; }
-.pagination > button { width: 28px; height: 28px; border: 1px solid #D7D7D7; background-position: center; background-size: 9px auto; background-repeat: no-repeat; }
-.pagination .prev { background-image:url(../images/common/icon_arrow_sm.svg); }
-.pagination .next { background-image:url(../images/common/icon_arrow_sm.svg); transform: rotate(180deg); }
-.pagination .first { background-image:url(../images/common/icon_arrow_end.svg); background-size: 16px auto; margin-right: 6px; }
-.pagination .end { background-image:url(../images/common/icon_arrow_end.svg); background-size: 16px auto; margin-left: 6px; transform: rotate(180deg); }
-
 .app-content {
+  position: relative !important;
+  margin-top:0 !important;
   &.main {
-    position: relative !important;
     padding-top:260px !important;
-    margin-top:0 !important;
+  }
+  &.sub {
+    padding-top:125px !important;
   }
 }
 .brand-name {
@@ -545,4 +556,58 @@ button {padding:0;border:none;cursor:pointer;font-family:inherit;background:none
       }
     }
   }
+}
+
+.sub-tit {
+  position: absolute;
+  top:60px;
+  left:0;
+  background-color: #142BC4;
+  width:100%;
+  h2 {
+    color:#fff;
+    height:40px;
+    line-height: 40px;
+    font-size:16px;
+    text-align: center;
+    margin:0;
+  }
+}
+.setting-box {
+  .row {
+    margin-top:1.5rem;
+    &.row:first-child {
+      margin-top:0;
+    }
+  }
+  .col-5 {
+    text-align: right;
+  }
+  .noti {
+    margin-top:5px;
+  }
+}
+/* 로그인 */
+.login {
+  h1 {
+    text-align: center;
+    img {
+      width:90px;
+    }
+  }
+  .auth-wrapper {
+    display : flex;
+    flex-basis : 100%;
+    min-height : 100vh;
+    min-height : calc(var(--vh, 1vh) * 100);
+    width : 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding:40px;
+  }
+  .auth-inner {
+    max-width: 400px;
+  }
+
 }

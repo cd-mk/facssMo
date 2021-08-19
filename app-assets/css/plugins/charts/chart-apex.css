@@ -42,8 +42,13 @@
   stroke-width : 0;
 }
 
-.apexcharts-canvas .apexcharts-pie .apexcharts-datalabel-label, .apexcharts-canvas .apexcharts-pie .apexcharts-datalabel-value {
-  font-size : 1.5rem;
+.apexcharts-canvas .apexcharts-pie .apexcharts-datalabel-label {
+  font-size : 1rem;
+}
+
+.apexcharts-canvas .apexcharts-pie .apexcharts-datalabel-value {
+  font-size : 2rem;
+  font-weight : 900;
 }
 
 .apexcharts-canvas .apexcharts-marker {
