@@ -42,7 +42,7 @@ $(function () {
   var donutChartEl = document.querySelector('#donut-chart'),
     donutChartConfig = {
       chart: {
-        height: 350,
+        height: 300,
         type: 'donut'
       },
       legend: {
@@ -53,7 +53,7 @@ $(function () {
       series: [85, 16, 50, 50, 10, 20, 40, 15],
       colors: [
         chartColors.donut.series1,
-        chartColors.donut.series5,
+        chartColors.donut.series2,
         chartColors.donut.series3,
         chartColors.donut.series4,
         chartColors.donut.series5,
@@ -73,11 +73,11 @@ $(function () {
             labels: {
               show: true,
               name: {
-                fontSize: '12px',
+                fontSize: '1rem',
                 fontFamily: 'Noto Sans KR'
               },
               value: {
-                fontSize: '14px',
+                fontSize: '1.5rem',
                 fontFamily: 'Noto Sans KR',
                 formatter: function (val) {
                   return parseInt(val) + '%';
@@ -85,7 +85,7 @@ $(function () {
               },
               total: {
                 show: true,
-                fontSize: '12px',
+                fontSize: '1rem',
                 label: '출근율',
                 formatter: function (w) {
                   return '31%';

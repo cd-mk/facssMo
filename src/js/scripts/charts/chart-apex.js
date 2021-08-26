@@ -42,7 +42,7 @@ $(function () {
   var donutChartEl = document.querySelector('#donut-chart'),
     donutChartConfig = {
       chart: {
-        height: 350,
+        height: 400,
         type: 'donut'
       },
       legend: {
@@ -53,7 +53,7 @@ $(function () {
       series: [85, 16, 50, 50, 10, 20, 40, 15],
       colors: [
         chartColors.donut.series1,
-        chartColors.donut.series5,
+        chartColors.donut.series2,
         chartColors.donut.series3,
         chartColors.donut.series4,
         chartColors.donut.series5,
