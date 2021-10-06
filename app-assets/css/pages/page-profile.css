@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 #user-profile {
   /*-------------profile header section---------*/
   /*-------- profile info section --------*/
@@ -36,12 +46,12 @@
 }
 
 #user-profile #profile-info .profile-star {
-  color : #BABFC7;
+  color : #EDEDED;
 }
 
 #user-profile #profile-info .profile-star i.profile-favorite, #user-profile #profile-info .profile-star svg.profile-favorite {
-  fill : #FF9F43;
-  stroke : #FF9F43;
+  fill : #FA7E2C;
+  stroke : #FA7E2C;
 }
 
 #user-profile #profile-info .profile-likes {

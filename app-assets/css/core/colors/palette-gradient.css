@@ -1,14 +1,24 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .bg-gradient-dark, .btn-gradient-dark {
   color : #FFFFFF;
   transition : all 0.2s ease;
-  background-image : linear-gradient(47deg, #4B4B4B, #1E1E1E);
+  background-image : linear-gradient(47deg, #22292F, #1E1E1E);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
 
 .dark-layout .bg-gradient-dark, .dark-layout
 .btn-gradient-dark {
-  background-image : linear-gradient(47deg, #1E1E1E, #4B4B4B);
+  background-image : linear-gradient(47deg, #1E1E1E, #22292F);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -26,7 +36,7 @@
 }
 
 .bg-gradient-dark:active, .bg-gradient-dark:focus, .btn-gradient-dark:active, .btn-gradient-dark:focus {
-  background-image : linear-gradient(47deg, #1E1E1E, #4B4B4B);
+  background-image : linear-gradient(47deg, #1E1E1E, #22292F);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -60,7 +70,7 @@
 .bg-gradient-secondary, .btn-gradient-secondary {
   color : #FFFFFF;
   transition : all 0.2s ease;
-  background-image : linear-gradient(47deg, #82868B, #9CA0A4);
+  background-image : linear-gradient(47deg, #514F57, #6A6772);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -78,7 +88,7 @@
 }
 
 .bg-gradient-secondary:active, .bg-gradient-secondary:focus, .btn-gradient-secondary:active, .btn-gradient-secondary:focus {
-  background-image : linear-gradient(47deg, #696D71, #82868B);
+  background-image : linear-gradient(47deg, #38373C, #514F57);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -86,7 +96,7 @@
 .bg-gradient-success, .btn-gradient-success {
   color : #FFFFFF;
   transition : all 0.2s ease;
-  background-image : linear-gradient(47deg, #28C76F, #48DA89);
+  background-image : linear-gradient(47deg, #04CFAC, #0CFAD1);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -104,7 +114,7 @@
 }
 
 .bg-gradient-success:active, .bg-gradient-success:focus, .btn-gradient-success:active, .btn-gradient-success:focus {
-  background-image : linear-gradient(47deg, #1F9D57, #28C76F);
+  background-image : linear-gradient(47deg, #039D82, #04CFAC);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -112,7 +122,7 @@
 .bg-gradient-info, .btn-gradient-info {
   color : #FFFFFF;
   transition : all 0.2s ease;
-  background-image : linear-gradient(47deg, #0D92FF, #40A9FF);
+  background-image : linear-gradient(47deg, #0064C2, #007EF5);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -130,7 +140,7 @@
 }
 
 .bg-gradient-info:active, .bg-gradient-info:focus, .btn-gradient-info:active, .btn-gradient-info:focus {
-  background-image : linear-gradient(47deg, #0077D9, #0D92FF);
+  background-image : linear-gradient(47deg, #004A8F, #0064C2);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -138,7 +148,7 @@
 .bg-gradient-warning, .btn-gradient-warning {
   color : #FFFFFF;
   transition : all 0.2s ease;
-  background-image : linear-gradient(47deg, #FF9F43, #FFB976);
+  background-image : linear-gradient(47deg, #FA7E2C, #FB9C5E);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }
@@ -156,7 +166,7 @@
 }
 
 .bg-gradient-warning:active, .bg-gradient-warning:focus, .btn-gradient-warning:active, .btn-gradient-warning:focus {
-  background-image : linear-gradient(47deg, #FF8510, #FF9F43);
+  background-image : linear-gradient(47deg, #ED6206, #FA7E2C);
   background-repeat : repeat-x;
   background-repeat : repeat;
 }

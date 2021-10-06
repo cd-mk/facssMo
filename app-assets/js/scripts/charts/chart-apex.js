@@ -42,7 +42,7 @@ $(function () {
   var donutChartEl = document.querySelector('#donut-chart'),
     donutChartConfig = {
       chart: {
-        height: 300,
+        height: 400,
         type: 'donut'
       },
       legend: {

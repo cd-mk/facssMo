@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .ecommerce-application .app-ecommerce-details .product-img {
   width : 600px;
 }
@@ -9,14 +19,14 @@
 }
 
 .ecommerce-application .app-ecommerce-details .filled-star {
-  fill : #FF9F43;
-  stroke : #FF9F43;
-  color : #FF9F43;
+  fill : #FA7E2C;
+  stroke : #FA7E2C;
+  color : #FA7E2C;
 }
 
 .ecommerce-application .app-ecommerce-details .unfilled-star {
-  stroke : #BABFC7;
-  color : #BABFC7;
+  stroke : #EDEDED;
+  color : #EDEDED;
 }
 
 .ecommerce-application .app-ecommerce-details .item-price {
@@ -112,7 +122,7 @@
 }
 
 .ecommerce-application .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367F0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -127,7 +137,7 @@
 }
 
 .ecommerce-application .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367F0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -138,7 +148,7 @@
 }
 
 .ecommerce-application .swiper-container-rtl .swiper-button-prev:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367F0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -149,7 +159,7 @@
 }
 
 .ecommerce-application .swiper-container-rtl .swiper-button-next:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367F0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E');
   background-repeat : no-repeat;
   background-position : center;
   background-size : 44px;
@@ -182,11 +192,11 @@
 }
 
 .ecommerce-application .product-color-options .selected .b-success {
-  border-color : #28C76F;
+  border-color : #04CFAC;
 }
 
 .ecommerce-application .product-color-options .selected .b-success .filloption {
-  box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(4, 207, 172, 0.4);
 }
 
 .ecommerce-application .product-color-options .selected .b-danger {
@@ -198,19 +208,19 @@
 }
 
 .ecommerce-application .product-color-options .selected .b-warning {
-  border-color : #FF9F43;
+  border-color : #FA7E2C;
 }
 
 .ecommerce-application .product-color-options .selected .b-warning .filloption {
-  box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(250, 126, 44, 0.4);
 }
 
 .ecommerce-application .product-color-options .selected .b-info {
-  border-color : #0D92FF;
+  border-color : #0064C2;
 }
 
 .ecommerce-application .product-color-options .selected .b-info .filloption {
-  box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(0, 100, 194, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-primary .filloption {
@@ -218,7 +228,7 @@
 }
 
 .ecommerce-application .product-color-options .b-success .filloption {
-  box-shadow : 0 2px 4px 0 rgba(40, 199, 111, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(4, 207, 172, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-danger .filloption {
@@ -226,11 +236,11 @@
 }
 
 .ecommerce-application .product-color-options .b-warning .filloption {
-  box-shadow : 0 2px 4px 0 rgba(255, 159, 67, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(250, 126, 44, 0.4);
 }
 
 .ecommerce-application .product-color-options .b-info .filloption {
-  box-shadow : 0 2px 4px 0 rgba(13, 146, 255, 0.4);
+  box-shadow : 0 2px 4px 0 rgba(0, 100, 194, 0.4);
 }
 
 @media (max-width: 767.98px) {

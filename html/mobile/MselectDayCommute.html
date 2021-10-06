@@ -15,10 +15,10 @@
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/ico/favicon.ico">
 
+    <!-- 공통 -->
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
     
     <!-- BEGIN: Theme CSS-->
@@ -26,20 +26,19 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
-
-    <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/charts/chart-apex.css">
-    <!-- END: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-validation.css">
+    <!-- //공통 -->
 
+    <!-- BEGIN: Page CSS (현페이지에서만 사용) -->
+    <!-- END: Page CSS (현페이지에서만 사용) -->
+
+    <!-- 공통 -->
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
     <!-- END: Custom CSS-->
+    <!-- //공통 -->
 
 </head>
 <!-- END: Head-->
@@ -186,24 +185,420 @@
                     <h2>근태현황</h2>
                 </div>
                 <!-- apex charts section start -->
-                <div class="card section">
+                <div class="card section select-date-box">
                     <div class="card-body">
-                        2021-07-20(화)
+                        <div class="date-current">
+                            <i class="fas fa-chevron-left cursor" onclick="javascript:fnMoveDate('pre');"></i>
+                            <span class="date">2021-08-30<em>(월)</em></span>
+                            <i class="fas fa-chevron-right cursor" onclick="javascript:fnMoveDate('next');"></i>
+                        </div>
+                        <div class="date-search">
+                            <!-- 링크 임시 -->
+                            <!-- 버튼 활성화 active -->
+                            <button type="button" class="btn btn-sm btn-outline-primary active" name="searchDate" value="day" onclick="location.href='./MselectDayCommute.html'">오늘</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" name="searchDate" value="week" onclick="location.href='./MselectWeekCommute.html'">주간</button>
+                            <button type="button" class="btn btn-sm btn-outline-primary" name="searchDate" value="month" onclick="location.href='./MselectMonthCommute.html'">월간</button>
+                        </div>
+                        <!-- 검색영역 -->
+                        <div class="search-box">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">전체기간</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="javascript:void(0);">전체기간</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">이름</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">부서명</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">사업장명</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="검색내용" aria-label="Amount" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">검색</button>
+                                </div>
+                            </div>
+                            <div class="row search-num">
+                                <div class="col">
+                                    <div class="inner">
+                                        정상
+                                        <div class="num">12</div>
+                                    </div>
+                        
+                                </div>
+                                <div class="col">
+                                    <div class="inner">
+                                        지각
+                                        <div class="num">12</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inner">
+                                        조퇴
+                                        <div class="num">12</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inner">
+                                        휴가
+                                        <div class="num">12</div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="inner">
+                                        결근
+                                        <div class="num">12</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- frequent answer and question  collapse  -->
-                <div class="collapse-margin collapse-icon mt-2" id="faq-payment-qna">
-                    <div class="card">
-                        <div class="card-header" id="paymentOne" data-toggle="collapse" role="button" data-target="#faq-payment-one"
-                            aria-expanded="false" aria-controls="faq-payment-one">
-                            <span class="lead collapse-title">
-                                결근 <span class="badge badge-pill badge-danger">5</span>
-                            </span>
+
+                
+                <div class="collapse-margin collapse-icon attend-box-wrap">
+                    <!-- 결근 (absent) data-target과 id(#inner-n 를 연결-->
+                    <div class="card attend-box absent">
+                        <div class="card-header" data-toggle="collapse" role="button" aria-expanded="false" data-target="#inner-absent">
+                            <span class="lead collapse-title">결근 <span class="badge badge-pill">5</span></span>
                         </div>
                 
-                        <div id="faq-payment-one" class="collapse" aria-labelledby="paymentOne" data-parent="#faq-payment-qna">
+                        <div id="inner-absent" class="collapse">
                             <div class="card-body">
-                               f
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 지각 (belate) data-target과 id(#inner-n 를 연결-->
+                    <div class="card attend-box belate">
+                        <div class="card-header" data-toggle="collapse" role="button" aria-expanded="false" data-target="#inner-belate">
+                            <span class="lead collapse-title">지각 <span class="badge badge-pill">5</span></span>
+                        </div>
+                    
+                        <div id="inner-belate" class="collapse">
+                            <div class="card-body">
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 조퇴 (early) data-target과 id(#inner-n 를 연결-->
+                    <div class="card attend-box early">
+                        <div class="card-header" data-toggle="collapse" role="button" aria-expanded="false" data-target="#inner-early">
+                            <span class="lead collapse-title">조퇴 <span class="badge badge-pill">5</span></span>
+                        </div>
+                    
+                        <div id="inner-early" class="collapse">
+                            <div class="card-body">
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 휴가 (dayoff) data-target과 id(#inner-n 를 연결-->
+                    <div class="card attend-box dayoff">
+                        <div class="card-header" data-toggle="collapse" role="button" aria-expanded="false" data-target="#inner-dayoff">
+                            <span class="lead collapse-title">휴가 <span class="badge badge-pill">5</span></span>
+                        </div>
+                    
+                        <div id="inner-dayoff" class="collapse">
+                            <div class="card-body">
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- 정상 (gowork) data-target과 id(#inner-n 를 연결-->
+                    <div class="card attend-box gowork">
+                        <div class="card-header" data-toggle="collapse" role="button" aria-expanded="false" data-target="#inner-gowork">
+                            <span class="lead collapse-title">정상 <span class="badge badge-pill">5</span></span>
+                        </div>
+                    
+                        <div id="inner-gowork" class="collapse">
+                            <div class="card-body">
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="media status-member">
+                                        <div class="avatar">
+                                            <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="name">송강</p>
+                                            <p class="dep">미출근</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,7 +612,7 @@
     <div class="drag-target"></div>
     
     <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light"></footer>
+    <!-- <footer class="footer footer-static footer-light"></footer> -->
 
 
 

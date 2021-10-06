@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .aggrid {
   height : 600px;
   font-size : 1rem;
@@ -50,7 +60,7 @@
 }
 
 .aggrid .ag-paging-panel .ag-paging-button {
-  background-color : #DAE1E7;
+  background-color : #BABFC7;
   border-radius : 50%;
   padding : 0.5rem 0rem;
   margin : 0 0.5rem;
@@ -85,7 +95,7 @@
 }
 
 .aggrid .ag-paging-panel span[ref='lbTotal'] {
-  background-color : #DAE1E7;
+  background-color : #BABFC7;
   color : #6E6B7B !important;
 }
 
@@ -95,7 +105,7 @@
 }
 
 .aggrid ::-webkit-scrollbar-thumb {
-  background : #DAE1E7;
+  background : #BABFC7;
   border-radius : 20px;
 }
 

@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .fc .fc-toolbar {
   flex-wrap : wrap;
   flex-direction : row !important;

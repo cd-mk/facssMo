@@ -11,14 +11,14 @@
     <meta name="keywords" content="FACSS, 출근기록, 출퇴근기록">
     <meta property="og:image" content="../../app-assets/images/common/og-img.jpg">
     <meta name="author" content="METSAKUUR">
-    <title>FACSS - 알림 | 커뮤니티</title>
+    <title>FACSS - 공지사항 | 커뮤니티</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/ico/favicon.ico">
 
+    <!-- 공통 -->
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -26,26 +26,27 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
-
-    <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
-    <!-- END: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-validation.css">
+    <!-- //공통 -->
 
+    <!-- BEGIN: Page CSS (현페이지에서만 사용) -->
+    <!-- END: Page CSS (현페이지에서만 사용) -->
+
+    <!-- 공통 -->
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
     <!-- END: Custom CSS-->
+    <!-- //공통 -->
 
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static " data-open="click" data-menu="vertical-menu-modern" data-col="">
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static " data-open="click"
+    data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar align-items-center floating-nav navbar-dark navbar-shadow">
@@ -53,15 +54,17 @@
             <div class="bookmark-wrapper d-flex align-items-center">
                 <ul class="nav navbar-nav d-xl-none">
                     <li class="nav-item">
-                        <a class="nav-link menu-toggle d-inline-block text-light" href="javascript:void(0);"><i class="ficon text-light" data-feather="menu"></i></a>
-                        <a href="./Mdashboard.html"><h1 class="brand-name">주)메사쿠어컴퍼니</h1></a>
+                        <a class="nav-link menu-toggle d-inline-block text-light" href="javascript:void(0);"><i
+                                class="ficon text-light" data-feather="menu"></i></a>
+                        <a href="./Mdashboard.html">
+                            <h1 class="brand-name">주)메사쿠어컴퍼니</h1>
+                        </a>
                     </li>
                 </ul>
             </div>
             <ul class="nav navbar-nav noti-box">
                 <li class="nav-item dropdown dropdown-notification mr-25">
-                    <a class="nav-link" href="javascript:void(0);"
-                        data-toggle="dropdown">
+                    <a class="nav-link" href="javascript:void(0);" data-toggle="dropdown">
                         <i class="fas fa-bell"></i>
                         <span class="badge badge-pill badge-danger badge-up">5</span>
                     </a>
@@ -175,103 +178,128 @@
 
     <!-- BEGIN: Content-->
     <!-- 
-        page: main 
-        add class : main
+        page: sub 
+        add class : sub
     -->
-    <div class="app-content content sub">
+    <div class="app-content content sub card-x">
         <div class="content-wrapper">
             <div class="content-body">
                 <div class="sub-tit">
-                    <h2>알림</h2>
+                    <h2>공지사항</h2>
                 </div>
-
-                <div class="card section">
-                    <div class="card-header">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">전체기간</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="javascript:void(0);">전체기간</a>
-                                    <a class="dropdown-item" href="javascript:void(0);">1주일</a>
-                                    <a class="dropdown-item" href="javascript:void(0);">1개월</a>
-                                    <a class="dropdown-item" href="javascript:void(0);">6개월</a>
-                                    <a class="dropdown-item" href="javascript:void(0);">1년</a>
+                <!-- 검색영역 -->
+                <div class="card section search-data">
+                    <div class="card-body">
+                        <div class="search-box">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <button type="button" class="btn btn-outline-primary dropdown-toggle"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">전체기간</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="javascript:void(0);">전체기간</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">1주일</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">1개월</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">6개월</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">1년</a>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control" placeholder="검색내용" aria-label="Amount" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">검색</button>
                                 </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="검색내용" aria-label="Amount" />
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">검색</button>
-                            </div>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="ul-tbl-box notice-list">
-                            
-                            <ul>
-                                <!-- 글 목록 불러오기 -->
-                                <li>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="Check1" checked />
-                                        <label class="custom-control-label" for="Check1"></label>
-                                    </div>
-                                    <a href="#url">
-                                        <div class="inner-box">
-                                            <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
-                                        </div>
-                                        <div class="inner-box small row">
-                                            <div class="col info">홍길동</div>
-                                            <div class="col regi-date">2021-07-26</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="Check1" checked />
-                                        <label class="custom-control-label" for="Check1"></label>
-                                    </div>
-                                    <a href="#url">
-                                        <div class="inner-box">
-                                            <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
-                                        </div>
-                                        <div class="inner-box small row">
-                                            <div class="col info">홍길동</div>
-                                            <div class="col regi-date">2021-07-26</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="Check1" checked />
-                                        <label class="custom-control-label" for="Check1"></label>
-                                    </div>
-                                    <a href="#url">
-                                        <div class="inner-box">
-                                            <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
-                                        </div>
-                                        <div class="inner-box small row">
-                                            <div class="col info">홍길동</div>
-                                            <div class="col regi-date">2021-07-26</div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <!-- //글 목록 불러오기 -->
-                            </ul>
-                        </div>
-                        <nav aria-label="Page navigation">
-                            <ul class="pagination justify-content-center mt-2">
-                                <li class="page-item prev"><a class="page-link" href="javascript:void(0);"></a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                                <li class="page-item active" aria-current="page"><a class="page-link" href="javascript:void(0);">4</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
-                                <li class="page-item next"><a class="page-link" href="javascript:void(0);"></a></li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
+                <div class="row tbl-header-box">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fas fa-plus"></i> 새글 작성하기</button>
+                    </div>
+                    <div class="col-auto ml-auto">
+                        <select id="sechSelectBoxThi" name="sechSelectBoxThi" class="custom-select custom-select-sm">
+                            <option value="10" selected="">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ul-tbl-box list-default">
+                    <ul>
+                        <!-- 글 목록 불러오기 -->
+                        <li>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="Check1" checked />
+                                <label class="custom-control-label" for="Check1"></label>
+                            </div>
+                            <a href="#url">
+                                <div class="inner-box">
+                                    <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
+                                </div>
+                                <div class="inner-box small row">
+                                    <div class="col info">
+                                        공개여부: 공개
+                                    </div>
+                                    <div class="col-auto regi-date">
+                                        작성일: 2021-07-26<br>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="Check2" checked />
+                                <label class="custom-control-label" for="Check2"></label>
+                            </div>
+                            <a href="#url">
+                                <div class="inner-box">
+                                    <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
+                                </div>
+                                <div class="inner-box small row">
+                                    <div class="col info">
+                                        공개여부: 공개
+                                    </div>
+                                    <div class="col-auto regi-date">
+                                        작성일: 2021-07-26<br>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="Check3" checked />
+                                <label class="custom-control-label" for="Check3"></label>
+                            </div>
+                            <a href="#url">
+                                <div class="inner-box">
+                                    <span class="title">코로나19 긴급 방역을 위한 상담업무(1:1 문의 및 이메일 상담) 지연 안내</span>
+                                </div>
+                                <div class="inner-box small row">
+                                    <div class="col info">
+                                        공개여부: 공개
+                                    </div>
+                                    <div class="col-auto regi-date">
+                                        작성일: 2021-07-26<br>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- //글 목록 불러오기 -->
+                    </ul>
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center mt-2">
+                        <li class="page-item prev"><a class="page-link" href="javascript:void(0);"></a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                        <li class="page-item active" aria-current="page"><a class="page-link"
+                                href="javascript:void(0);">4</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">5</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">6</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0);">7</a></li>
+                        <li class="page-item next"><a class="page-link" href="javascript:void(0);"></a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
@@ -279,9 +307,9 @@
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
-    
+
     <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light"></footer>
+    <!-- <footer class="footer footer-static footer-light"></footer> -->
 
 
 
@@ -300,6 +328,7 @@
     <!-- BEGIN: Page JS-->
     <script src="../../assets/js/scripts.js"></script>
     <!-- END: Page JS-->
+
 </body>
 <!-- END: Body-->
 

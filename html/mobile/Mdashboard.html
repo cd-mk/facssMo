@@ -10,15 +10,14 @@
     <meta name="description" content="출퇴근기록 솔루션">
     <meta name="keywords" content="FACSS, 출근기록, 출퇴근기록">
     <meta property="og:image" content="../../app-assets/images/common/og-img.jpg">
-    <meta name="author" content="METSAKUUR">
+    <meta name="author" content="METSAKUUR">  
     <title>FACSS - Dashboard</title>
     <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/ico/favicon.ico">
-
+    <!-- 공통 -->
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
     <!-- END: Vendor CSS-->
     
     <!-- BEGIN: Theme CSS-->
@@ -26,21 +25,20 @@
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.min.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.min.css">
     <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
-
-
-    <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/pickers/form-flat-pickr.css">
-    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/charts/chart-apex.css">
-    <!-- END: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-validation.css">
+    <!-- //공통 -->
 
+    <!-- BEGIN: Page CSS (현페이지에서만 사용) -->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/charts/chart-apex.css">
+    <!-- END: Page CSS (현페이지에서만 사용) -->
+
+    <!-- 공통 -->
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
     <!-- END: Custom CSS-->
+    <!-- //공통 -->
 
 </head>
 <!-- END: Head-->
@@ -243,9 +241,7 @@
                                         <div class="drop-box">
                                             <a class="dropdown-item" href="#url">
                                                 <div class="media status-member">
-                                                    <div class="avatar">
-                                                        <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
-                                                    </div>
+                                                    <div class="avatar-content">SK</div>
                                                     <div class="media-body">
                                                         <p class="name">송강</p>
                                                         <p class="dep">Business Hub</p>
@@ -1096,7 +1092,7 @@
                                         <div class="col">
                                             <div class="media status-member">
                                                 <div class="avatar">
-                                                    <img src="../../assets/images/avatars/12-small.jpg" alt="avatar" />
+                                                    <div class="avatar-content">SK</div>
                                                 </div>
                                                 <div class="media-body">
                                                     <p class="name">송강</p>
@@ -1227,7 +1223,7 @@
                     </div>
                 </div>
 
-                <div class="card section notice-box">
+                <div class="card section lately-box">
                     <div class="card-header line">
                         <h2 class="card-title">공지사항</h2>
                         <a href="MselectNotice.html" class="btn-more">more</a>
@@ -1347,7 +1343,7 @@
     <div class="drag-target"></div>
     
     <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light"></footer>
+    <!-- <footer class="footer footer-static footer-light">fff</footer> -->
 
 
 

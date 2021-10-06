@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 #toast-container > div {
   opacity : 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -64,15 +74,15 @@
 }
 
 .toast-success .toast-title {
-  color : #28C76F;
+  color : #04CFAC;
 }
 
 .toast-success .toast-progress {
-  background-color : #28C76F;
+  background-color : #04CFAC;
 }
 
 .toast-success:before {
-  background-color : #28C76F;
+  background-color : #04CFAC;
 }
 
 .toast-success:after {
@@ -96,15 +106,15 @@
 }
 
 .toast-info .toast-title {
-  color : #0D92FF;
+  color : #0064C2;
 }
 
 .toast-info .toast-progress {
-  background-color : #0D92FF;
+  background-color : #0064C2;
 }
 
 .toast-info:before {
-  background-color : #0D92FF;
+  background-color : #0064C2;
 }
 
 .toast-info:after {
@@ -112,15 +122,15 @@
 }
 
 .toast-warning .toast-title {
-  color : #FF9F43;
+  color : #FA7E2C;
 }
 
 .toast-warning .toast-progress {
-  background-color : #FF9F43;
+  background-color : #FA7E2C;
 }
 
 .toast-warning:before {
-  background-color : #FF9F43;
+  background-color : #FA7E2C;
 }
 
 .toast-warning:after {

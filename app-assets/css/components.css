@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 html {
   font-size : 14px;
   height : 100%;
@@ -23,7 +33,7 @@ html .content {
   transition : 300ms ease all;
   -webkit-backface-visibility : hidden;
           backface-visibility : hidden;
-  min-height : calc(100% - 3.35rem);
+  min-height : 100%;
   margin-left : 260px;
 }
 
@@ -111,14 +121,14 @@ html .content .content-wrapper .content-header-right .btn-icon i, html .content 
 }
 
 html .navbar-floating.footer-static .app-content .content-area-wrapper, html .navbar-floating.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 0 + 1.3rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 0 + 1.3rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-floating.footer-static .app-content .content-area-wrapper, html .navbar-floating.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 0 +    1.3rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 0 +    1.3rem + 0rem    ));
   }
 }
 
@@ -135,14 +145,14 @@ html .navbar-floating.footer-hidden .app-content .content-area-wrapper, html .na
 }
 
 html .navbar-floating.footer-fixed .app-content .content-area-wrapper, html .navbar-floating.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 1.3rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 0 + 1.3rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 0 + 1.3rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-floating.footer-fixed .app-content .content-area-wrapper, html .navbar-floating.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    1.3rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0 +    1.3rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0 +    1.3rem + 0rem    ));
   }
 }
 
@@ -151,14 +161,14 @@ html .navbar-hidden .app-content {
 }
 
 html .navbar-hidden.footer-static .app-content .content-area-wrapper, html .navbar-hidden.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 0rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 0rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 1) + 0rem + 0 + 0rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 0rem + 0 + 0rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-hidden.footer-static .app-content .content-area-wrapper, html .navbar-hidden.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 0 +    0rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 0rem + 0 +    0rem + 0rem    ));
   }
 }
 
@@ -175,14 +185,14 @@ html .navbar-hidden.footer-hidden .app-content .content-area-wrapper, html .navb
 }
 
 html .navbar-hidden.footer-fixed .app-content .content-area-wrapper, html .navbar-hidden.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 0rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 0rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 2) + 0rem + 0 + 0rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 0rem + 0 + 0rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-hidden.footer-fixed .app-content .content-area-wrapper, html .navbar-hidden.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 0 +    0rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 0rem + 0 +    0rem + 0rem    ));
   }
 }
 
@@ -191,7 +201,7 @@ html .navbar-static .main-menu {
 }
 
 html .navbar-static .content {
-  min-height : calc(100% - calc(4.45rem + 3.35rem));
+  min-height : calc(100% - calc(4.45rem + 0));
 }
 
 html .navbar-static .app-content {
@@ -199,14 +209,14 @@ html .navbar-static .app-content {
 }
 
 html .navbar-static.footer-static .app-content .content-area-wrapper, html .navbar-static.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 0 + 0rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 0 + 0rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-static.footer-static .app-content .content-area-wrapper, html .navbar-static.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 0 +    0rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 0 +    0rem + 0rem    ));
   }
 }
 
@@ -223,14 +233,14 @@ html .navbar-static.footer-hidden .app-content .content-area-wrapper, html .navb
 }
 
 html .navbar-static.footer-fixed .app-content .content-area-wrapper, html .navbar-static.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 0 + 0rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 0 + 0rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-static.footer-fixed .app-content .content-area-wrapper, html .navbar-static.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0 +    0rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0 +    0rem + 0rem    ));
   }
 }
 
@@ -239,14 +249,14 @@ html .navbar-sticky .app-content {
 }
 
 html .navbar-sticky.footer-static .app-content .content-area-wrapper, html .navbar-sticky.footer-static .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 1) + 4.45rem + 0 + 0rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 1) + 4.45rem + 0 + 0rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-sticky.footer-static .app-content .content-area-wrapper, html .navbar-sticky.footer-static .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 0 +    0rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 1) - calc(0.8rem * 1)) + 4.45rem + 0 +    0rem + 0rem    ));
   }
 }
 
@@ -263,14 +273,14 @@ html .navbar-sticky.footer-hidden .app-content .content-area-wrapper, html .navb
 }
 
 html .navbar-sticky.footer-fixed .app-content .content-area-wrapper, html .navbar-sticky.footer-fixed .app-content .kanban-wrapper {
-  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
-  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 3.35rem + 0rem + 0rem  ));
+  height : calc(  100vh -  calc(  calc(2rem * 2) + 4.45rem + 0 + 0rem + 0rem  ));
+  height : calc(  var(--vh, 1vh) * 100 -  calc(  calc(2rem * 2) + 4.45rem + 0 + 0rem + 0rem  ));
 }
 
 @media (max-width: 575.98px) {
   html .navbar-sticky.footer-fixed .app-content .content-area-wrapper, html .navbar-sticky.footer-fixed .app-content .kanban-wrapper {
-    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
-    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 3.35rem +    0rem + 0rem    ));
+    height : calc(    100vh -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0 +    0rem + 0rem    ));
+    height : calc(    var(--vh, 1vh) * 100 -    calc(    calc(calc(2rem * 2) - calc(0.8rem * 2)) + 4.45rem + 0 +    0rem + 0rem    ));
   }
 }
 
@@ -285,7 +295,7 @@ html .navbar-static .nav.header-navbar .navbar-container .search-input .search-l
 }
 
 html .footer-fixed .content.app-content {
-  padding-bottom : 3.35rem !important;
+  padding-bottom : 0 !important;
 }
 
 html [data-col='1-column'] .header-navbar {
@@ -310,7 +320,7 @@ html [data-col='1-column'].horizontal-layout .app-content {
 }
 
 html [data-col='1-column'].horizontal-layout.footer-fixed .app-content {
-  padding : calc(2rem + 4.45rem + 1.3rem) 2rem 3.35rem 2rem !important;
+  padding : calc(2rem + 4.45rem + 1.3rem) 2rem 0 2rem !important;
 }
 
 html .blank-page .content {
@@ -494,7 +504,7 @@ html .pace .pace-progress {
 
 footer.footer {
   padding : 0.8rem 2rem;
-  min-height : 3.35rem;
+  min-height : 0;
   transition : 300ms ease all;
 }
 
@@ -1135,7 +1145,7 @@ footer.footer-border {
 }
 
 .avatar .avatar-status-online {
-  background-color : #28C76F;
+  background-color : #04CFAC;
 }
 
 .avatar .avatar-status-busy {
@@ -1143,11 +1153,11 @@ footer.footer-border {
 }
 
 .avatar .avatar-status-away {
-  background-color : #FF9F43;
+  background-color : #FA7E2C;
 }
 
 .avatar .avatar-status-offline {
-  background-color : #82868B;
+  background-color : #514F57;
 }
 
 .avatar.avatar-tag {
@@ -1250,7 +1260,7 @@ footer.footer-border {
 }
 
 .avatar-group .avatar .avatar-content {
-  background-color : #B7B9BC !important;
+  background-color : #83808C !important;
 }
 
 .avatar-group .avatar:hover {
@@ -3324,7 +3334,7 @@ body:after {
 }
 
 .dark-layout .select2-container .select2-selection--multiple .select2-selection__choice__remove:before {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-x\'%3E%3Cline x1=\'18\' y1=\'6\' x2=\'6\' y2=\'18\'%3E%3C/line%3E%3Cline x1=\'6\' y1=\'6\' x2=\'18\' y2=\'18\'%3E%3C/line%3E%3C/svg%3E');
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367F0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-x\'%3E%3Cline x1=\'18\' y1=\'6\' x2=\'6\' y2=\'18\'%3E%3C/line%3E%3Cline x1=\'6\' y1=\'6\' x2=\'18\' y2=\'18\'%3E%3C/line%3E%3C/svg%3E');
 }
 
 .dark-layout .select2-container .select2-results__option[aria-disabled='true'] {
@@ -3469,6 +3479,15 @@ tr.group {
   }
 }
 
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 /* Bootstrap Touchspin */
 .bootstrap-touchspin.input-group {
   width : 8.4rem;

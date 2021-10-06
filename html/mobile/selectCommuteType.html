@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta property="og:type" content="website">
+    <meta name="description" content="출퇴근기록 솔루션">
+    <meta name="keywords" content="FACSS, 출근기록, 출퇴근기록">
+    <meta property="og:image" content="../../app-assets/images/common/og-img.jpg">
+    <meta name="author" content="METSAKUUR">
+    <title>FACSS - 근태 유형 관리 | 근태관리</title>
+    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/ico/favicon.ico">
+
+    <!-- 공통 -->
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/charts/apexcharts.css">
+    <!-- END: Vendor CSS-->
+    
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-validation.css">
+    <!-- //공통 -->
+
+    <!-- BEGIN: Page CSS (현페이지에서만 사용) -->
+    <!-- END: Page CSS (현페이지에서만 사용) -->
+
+    <!-- 공통 -->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/custom.css">
+    <!-- END: Custom CSS-->
+    <!-- //공통 -->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar align-items-center floating-nav navbar-dark navbar-shadow">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item">
+                        <a class="nav-link menu-toggle d-inline-block text-light" href="javascript:void(0);"><i class="ficon text-light" data-feather="menu"></i></a>
+                        <a href="./Mdashboard.html"><h1 class="brand-name">주)메사쿠어컴퍼니</h1></a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav noti-box">
+                <li class="nav-item dropdown dropdown-notification mr-25">
+                    <a class="nav-link" href="javascript:void(0);"
+                        data-toggle="dropdown">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge badge-pill badge-danger badge-up">5</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title mb-0 mr-auto">Notifications</h4>
+                                <div class="badge badge-pill badge-light-primary">6 New</div>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list">
+                            <a class="d-flex" href="javascript:void(0)">
+                                <div class="media d-flex align-items-start">
+                                    <div class="media-body">
+                                        <p class="media-heading"><span class="font-weight-bolder">New
+                                                message</span>&nbsp;received</p><small class="notification-text"> You
+                                            have 10 unread messages</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto">
+                </li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="d-block d-xl-none toggle-icon" data-feather="x"></i>
+                        <i class="d-none d-xl-block collapse-toggle-icon" data-feather="disc" data-ticon="disc"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="login-info">
+                <span class="avatar"><i data-feather="user"></i></span>
+                <span>METSAKUUR</span>
+                <a href="./login.html" class="btn btn-sm">로그아웃</a>
+            </div>
+        </div>
+
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="./Mdashboard.html">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="./MselectDayCommute.html">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">근태관리</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li>
+                            <a class="d-flex align-items-center" href="./MselectDayCommute.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Analytics">근태현황</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center" href="./MselectSettingCommute.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="eCommerce">기본설정</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center" href="./MinsertWorkGroup.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="eCommerce">근무유형관리</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="./MselectAlert.html">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">커뮤니티</span>
+                    </a>
+                    <ul class="menu-content">
+                        <li>
+                            <a class="d-flex align-items-center" href="./MselectAlert.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="Analytics">알림</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex align-items-center" href="./MselectNotice.html">
+                                <i data-feather="circle"></i><span class="menu-item text-truncate"
+                                    data-i18n="eCommerce">공지사항</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="./MselectUser.html">
+                        <span class="menu-title text-truncate" data-i18n="Dashboards">사용자관리</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <!-- 
+        page: main 
+        add class : main
+    -->
+    <div class="app-content content sub">
+        <div class="content-wrapper">
+            <div class="content-body">
+                <div class="sub-tit">
+                    <h2>기본설정</h2>
+                </div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="MinsertWorkGroup.html">근무 그룹 관리</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="selectCommuteType.html">근태 유형 관리</a>
+                    </li>
+                </ul>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col" class="text-nowrap">코드</th>
+                                <th scope="col" class="text-nowrap">항목</th>
+                                <th scope="col" class="text-nowrap">근무시간</th>
+                                <th scope="col" class="text-nowrap">사용여부</th>
+                                <th scope="col" class="text-nowrap">위치사용여부</th>
+                                <th scope="col" class="text-nowrap">설정</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-nowrap"> DefaultCheckIn </td>
+                                <td class="text-nowrap"> 출근 </td>
+                                <td class="text-nowrap"> 포함 </td>
+                                <td class="text-nowrap"> 사용 </td>
+                                <td class="text-nowrap"> 미사용 </td>
+                                <td class="text-nowrap">
+                                    <button type="button" class="btn btn-outline-secondary btn-xs icon-btn" data-toggle="modal"><i class="fas fa-cog"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td class="text-nowrap"> DefaultCheckIn </td>
+                                <td class="text-nowrap"> 출근 </td>
+                                <td class="text-nowrap"> 포함 </td>
+                                <td class="text-nowrap"> 사용 </td>
+                                <td class="text-nowrap"> 미사용 </td>
+                                <td class="text-nowrap">
+                                    <button type="button" class="btn btn-outline-secondary btn-xs icon-btn" data-toggle="modal"><i class="fas fa-cog"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    
+    <!-- BEGIN: Footer-->
+    <!-- <footer class="footer footer-static footer-light"></footer> -->
+
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../assets/js/scripts.js"></script>
+    <!-- END: Page JS-->
+<script>
+    $(document).ready(function(){
+        //근무시간 토글
+        $(":input:radio[name=workTimeType]").on('click', function() {
+            if($(this).val() == 'WOTI01'){
+                $("#workTimeDiv").css("display","block");
+            }else{
+                $("#workTimeDiv").css("display","none");
+            }
+        });
+
+        //휴게시간 토글
+        $("#breakTimeYnDiv button").on('click', function() {
+            if($(this).val() == '1'){
+                $("#breakTimeYnDiv button[value=1]").addClass('active');
+                $("#breakTimeYnDiv button[value=0]").removeClass('active');
+            }else{
+                $("#breakTimeYnDiv button[value=1]").removeClass('active');
+                $("#breakTimeYnDiv button[value=0]").addClass('active');
+            }
+        });
+
+        //시,분,초 선택
+        $('div.dropdown-menu a').on('click', function() {
+            // 버튼에 선택된 항목 텍스트 넣기
+            $(this).parents('div').prev('button').val($(this).attr('value'));
+            $(this).parents('div').prev('button').text($(this).text());
+        });
+
+        //요일 버튼 토글
+        $("button[name=weekBtn]").on('click', function() {
+            $(this).toggleClass('active');
+        });
+
+    });
+
+    //nav 페이지 이동
+    function fnPageMove(param){
+        if(param == 'type'){
+            location.href="/commute/selectCommuteType.do";
+        }else{
+            location.href="/commute/insertWorkGroup.do?pageMenuTemplateId='4'";
+        }
+    }
+
+    /***********************************************
+     * 그룹추가
+     ************************************************/
+    function fnInsertWorkGroup(){
+        //근무시간
+        if($(":input:radio[name=workTimeType]:checked").val() == "WOTI02"){
+            $("button[name=weekBtn]").removeClass("active");
+        }
+        var data = $.makeArray($("button[name=weekBtn]").map(function(){
+            if($(this).attr("class").indexOf("active") != -1){
+                return "1";
+            }else{
+                return "0";
+            }
+        }));
+        $("#workTimeDayUseYn").val(data);
+
+        var startWorkTimeIndex = $("button[name=startWorkTime]").length;
+        var startWorkTimeValue = "";
+        for(var i = 0; i < startWorkTimeIndex; i++){
+            if(i > 0 && i % 3 == 0){
+                startWorkTimeValue += ","
+            }
+            startWorkTimeValue += $("button[name=startWorkTime]").eq(i).val();
+        }
+        $("#startWorkTime").val(startWorkTimeValue);
+
+        var endWorkTimeIndex = $("button[name=endWorkTime]").length;
+        var endWorkTimeValue = "";
+        for(var i = 0; i < endWorkTimeIndex; i++){
+            if(i > 0 && i % 3 == 0){
+                endWorkTimeValue += ","
+            }
+            endWorkTimeValue += $("button[name=endWorkTime]").eq(i).val();
+        }
+        $("#endWorkTime").val(endWorkTimeValue);
+
+
+        //근무 시간상정 기준 설정
+        if($('input:checkbox[id="earlyWorkYn"]').is(":checked") == true){
+            $("#earlyWorkYn").val('1');
+        }else{
+            $("#earlyWorkYn").val('0');
+        }
+
+        if($('input:checkbox[id="lateYn"]').is(":checked") == true){
+            $("#lateYn").val('1');
+        }else{
+            $("#lateYn").val('0');
+        }
+
+        if($('input:checkbox[id="lateWorkOffYn"]').is(":checked") == true){
+            $("#lateWorkOffYn").val('1');
+        }else{
+            $("#lateWorkOffYn").val('0');
+        }
+
+        //자동퇴근설정
+
+        var autoWorkOffTimeIndex = $("button[name=autoWorkOffTime]").length;
+        var autoWorkOffTimeValue = "";
+        for(var i = 0; i < autoWorkOffTimeIndex; i++){
+            autoWorkOffTimeValue += $("button[name=autoWorkOffTime]").eq(i).val();
+        }
+        $("#autoWorkOffTime").val(autoWorkOffTimeValue);
+
+
+        //야간근무시간
+        var startNightWorkTimeIndex = $("button[name=startNightWorkTime]").length;
+        var startNightWorkTimeValue = "";
+        for(var i = 0; i < startNightWorkTimeIndex; i++){
+            startNightWorkTimeValue += $("button[name=startNightWorkTime]").eq(i).val();
+        }
+        $("#startNightWorkTime").val(startNightWorkTimeValue);
+
+        var endNightWorkTimeIndex = $("button[name=endNightWorkTime]").length;
+        var endNightWorkTimeValue = "";
+        for(var i=0; i < endNightWorkTimeIndex; i++){
+            endNightWorkTimeValue += $("button[name=endNightWorkTime]").eq(i).val();
+        }
+        $("#endNightWorkTime").val(endNightWorkTimeValue);
+
+        //휴게시간 자동외출 산정
+        $("#autoBreakTimeOutYn").val($("#breakTimeYnDiv button.active").val());
+
+        //휴게시간
+
+        var startBreakTimeIndex = $("button[name=startBreakTime]").length;
+        var startBreakTimeValue = "";
+        for(var i = 0; i < startBreakTimeIndex; i++){
+            if(i > 0 && i % 3 == 0){
+                startBreakTimeValue += ","
+            }
+            startBreakTimeValue += $("button[name=startBreakTime]").eq(i).val();
+        }
+        $("#startBreakTime").val(startBreakTimeValue);
+
+        var endBreakTimeIndex = $("button[name=endBreakTime]").length;
+        var endBreakTimeValue = "";
+        for(var i = 0; i < endBreakTimeIndex; i++){
+            if(i > 0 && i % 3 == 0){
+                endBreakTimeValue += ","
+            }
+            endBreakTimeValue += $("button[name=endBreakTime]").eq(i).val();
+        }
+        $("#endBreakTime").val(endBreakTimeValue);
+
+
+        var urlStr ="/commute/v1/insertWorkGroupProc";
+        var str = $("form").serialize();
+        $.ajax({
+            type:'POST'
+            ,url:urlStr
+            ,dataType:'JSON'
+            ,data: str
+            ,beforeSend: function(xhr){
+                xhr.setRequestHeader("AJAX", "true");
+            }
+            ,success:function(data){
+                successAlert("정상적으로 등록되었습니다.");
+                location.href="/commute/insertWorkGroup.do?pageMenuTemplateId='4'";
+            }
+            ,error:function(request){
+                if(request.status == 400){
+                    location.href = "/login.do";
+                }else{
+                    var response = JSON.parse(request.responseText);
+                    var errorList = response.errorList;
+
+                    failAlert(JSON.parse(request.responseText).message + "\r\n" + getErrorMessage(errorList));
+                }
+            }
+        });
+    }
+
+
+    /***********************************************
+     * 페이지이동
+     ************************************************/
+    function fnSelectGroup(workGroupId){
+        $("#workGroupId").val(workGroupId);
+        var urlStr ="/commute/selectWorkGroup.do";
+        $('form').attr({action: urlStr, method: 'POST'}).submit();
+    }
+</script>
+</body>
+<!-- END: Body-->
+
+</html>

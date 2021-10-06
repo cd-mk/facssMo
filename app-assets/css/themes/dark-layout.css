@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .dark-layout {
   /********* COMPONENTS *********/
   /********** FORMS **********/
@@ -416,11 +426,11 @@ body.dark-layout {
 }
 
 .dark-layout .btn.btn-dark {
-  background-color : #4B4B4B !important;
+  background-color : #22292F !important;
 }
 
 .dark-layout .btn.btn-outline-dark {
-  border-color : #4B4B4B;
+  border-color : #22292F;
   color : #B8C2CC;
 }
 
@@ -429,7 +439,7 @@ body.dark-layout {
 }
 
 .dark-layout .btn.btn-flat-dark:active, .dark-layout .btn.btn-flat-dark:focus {
-  background : #4B4B4B;
+  background : #22292F;
 }
 
 .dark-layout .btn-group-toggle label[class*='btn-outline-'] {
@@ -723,7 +733,7 @@ body.dark-layout {
 }
 
 .dark-layout .card-tiny-line-stats .apexcharts-series-markers .apexcharts-marker {
-  stroke : #0D92FF;
+  stroke : #0064C2;
 }
 
 .dark-layout .card-tiny-line-stats .apexcharts-series-markers:last-child .apexcharts-marker {
@@ -834,7 +844,7 @@ body.dark-layout {
 }
 
 .dark-layout .was-validated .form-control:valid, .dark-layout .form-control.is-valid {
-  border-color : #28C76F !important;
+  border-color : #04CFAC !important;
 }
 
 .dark-layout .wizard .steps ul .disabled a, .dark-layout .wizard .steps ul .done a {
@@ -903,7 +913,7 @@ body.dark-layout {
 
 .dark-layout .table thead.thead-dark th, .dark-layout .table tfoot.thead-dark th {
   background-color : #FFFFFF;
-  color : #4B4B4B !important;
+  color : #22292F !important;
 }
 
 .dark-layout .table:not(.table-dark):not(.table-light) thead:not(.thead-dark) th, .dark-layout .table:not(.table-dark):not(.table-light) tfoot:not(.thead-dark) th {
@@ -915,7 +925,7 @@ body.dark-layout {
 }
 
 .dark-layout .table.table-dark.table-striped tbody tr:nth-of-type(odd) {
-  background-color : rgba(75, 75, 75, 0.05);
+  background-color : rgba(34, 41, 47, 0.05);
 }
 
 .dark-layout .table.table-dark.table-striped tbody tr:nth-of-type(odd) td {
@@ -924,12 +934,12 @@ body.dark-layout {
 
 .dark-layout .table.table-dark td, .dark-layout .table.table-dark th {
   border-color : #F8F9FA !important;
-  color : #4B4B4B !important;
+  color : #22292F !important;
   background-color : #FFFFFF;
 }
 
 .dark-layout .table.table-dark td .text-white, .dark-layout .table.table-dark th .text-white {
-  color : #4B4B4B !important;
+  color : #22292F !important;
 }
 
 .dark-layout .table tbody tr[class*='table-'] td, .dark-layout .table tbody tr[class*='table-'] th {
@@ -1259,7 +1269,7 @@ body.dark-layout {
 }
 
 .dark-layout .chat-application .content-right .chat-app-window .active-chat .chat-content p {
-  color : #4B4B4B;
+  color : #22292F;
 }
 
 .dark-layout .chat-application .content-right .chat-app-window .active-chat .chat-header .dropdown-toggle {
@@ -1511,7 +1521,7 @@ body.dark-layout {
 }
 
 .dark-layout .app-calendar .fc .fc-timegrid .fc-scrollgrid-section .fc-day-today {
-  background-color : rgba(186, 191, 199, 0.12) !important;
+  background-color : rgba(237, 237, 237, 0.12) !important;
 }
 
 .dark-layout .app-calendar .fc .fc-timegrid .fc-scrollgrid-section .fc-day-today.fc-col-header-cell {

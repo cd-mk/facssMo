@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .file-manager-application .sidebar-file-manager {
   width : 260px;
   height : 100%;
@@ -162,7 +172,7 @@
 }
 
 .file-manager-application .content-area-wrapper .file-manager-main-content .file-manager-content-body .view-container .file-manager-item .file-logo-wrapper .feather-folder {
-  stroke : #BABFC7;
+  stroke : #EDEDED;
 }
 
 .file-manager-application .content-area-wrapper .file-manager-main-content .file-manager-content-body .view-container .file-manager-item .dropdown-menu {

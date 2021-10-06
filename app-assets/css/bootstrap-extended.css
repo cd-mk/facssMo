@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 a:focus {
   outline : none;
 }
@@ -132,7 +142,7 @@ a:not([href]):hover {
 }
 
 .text-body[href]:hover {
-  color : #5E50EE !important;
+  color : #7367F0 !important;
 }
 
 code {
@@ -176,7 +186,7 @@ pre code {
 }
 
 .table:not(.table-dark):not(.table-light) thead:not(.thead-dark) th, .table:not(.table-dark):not(.table-light) tfoot:not(.thead-dark) th {
-  background-color : #F3F2F7;
+  background-color : rgba(115, 103, 240, 0.12);
 }
 
 .table-hover tbody tr {
@@ -305,7 +315,7 @@ label {
 }
 
 .input-group:not(.bootstrap-touchspin):focus-within .form-control.is-valid, .input-group:not(.bootstrap-touchspin):focus-within .input-group-text.is-valid {
-  border-color : #28C76F;
+  border-color : #04CFAC;
 }
 
 .input-group:not(.bootstrap-touchspin):focus-within .form-control.is-invalid, .input-group:not(.bootstrap-touchspin):focus-within .input-group-text.is-invalid {
@@ -313,11 +323,11 @@ label {
 }
 
 .input-group.is-valid .input-group-text {
-  border-color : #28C76F !important;
+  border-color : #04CFAC !important;
 }
 
 .input-group.is-valid:not(.bootstrap-touchspin):focus-within .input-group-text {
-  border-color : #28C76F;
+  border-color : #04CFAC;
 }
 
 .input-group.is-invalid .input-group-text {
@@ -397,11 +407,11 @@ label {
 }
 
 .input-group-merge .form-control.is-valid ~ .input-group-append .input-group-text {
-  border-color : #28C76F;
+  border-color : #04CFAC;
 }
 
 .input-group-text .input-group-merge .input-group-prepend ~ .form-control.is-valid {
-  border-color : #28C76F;
+  border-color : #04CFAC;
 }
 
 textarea.form-control {
@@ -1466,7 +1476,7 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 }
 
 .navbar-dark .navbar-nav .disabled.nav-link {
-  color : #DAE1E7;
+  color : #BABFC7;
 }
 
 @media (max-width: 767.98px) {
@@ -1693,7 +1703,7 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 }
 
 .card .card-footer {
-  border-top : 1px solid #DAE1E7;
+  border-top : 1px solid #BABFC7;
   background-color : transparent;
 }
 
@@ -1823,7 +1833,7 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 
 .card-profile .card-body {
   position : relative;
-  padding : 5rem 2.3rem 1.5rem 2.3rem;
+  padding : 5rem 2.3rem 1rem 2.3rem;
 }
 
 .card-profile .card-body .profile-image-wrapper {
@@ -2503,7 +2513,7 @@ input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-o
 }
 
 .alert.alert-dark .alert-heading {
-  box-shadow : rgba(75, 75, 75, 0.4) 0 6px 15px -7px;
+  box-shadow : rgba(34, 41, 47, 0.4) 0 6px 15px -7px;
 }
 
 .media-list .media {
@@ -2910,7 +2920,7 @@ ul.list-inline.list-inline-pipe > li + li:before {
 }
 
 .page-item.prev .page-link:hover:before, .page-item.previous .page-link:hover:before {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E') !important;
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367F0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-left\'%3E%3Cpolyline points=\'15 18 9 12 15 6\'%3E%3C/polyline%3E%3C/svg%3E') !important;
 }
 
 .page-item.prev.disabled .page-link:before, .page-item.previous.disabled .page-link:before {
@@ -2929,7 +2939,7 @@ ul.list-inline.list-inline-pipe > li + li:before {
 }
 
 .page-item.next .page-link:hover:after {
-  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367f0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E') !important;
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%237367F0\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E') !important;
 }
 
 .page-item.next.disabled .page-link:after {

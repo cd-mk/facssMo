@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .bs-stepper {
   background-color : #FFFFFF;
   box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.1);
@@ -35,8 +45,8 @@
   height : 38px;
   padding : 0.5em 0;
   font-weight : 500;
-  color : #BABFC7;
-  background-color : rgba(186, 191, 199, 0.12);
+  color : #EDEDED;
+  background-color : rgba(237, 237, 237, 0.12);
   border-radius : 0.35rem;
 }
 
@@ -167,7 +177,7 @@
 }
 
 .dark-layout .bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-box {
-  color : #BABFC7;
+  color : #EDEDED;
 }
 
 .dark-layout .bs-stepper .bs-stepper-header .step .step-trigger .bs-stepper-label .bs-stepper-title {

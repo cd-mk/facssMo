@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .flatpickr-calendar .flatpickr-day {
   color : #6E6B7B;
 }
@@ -34,7 +44,7 @@
 }
 
 .flatpickr-calendar .flatpickr-day.flatpickr-disabled, .flatpickr-calendar .flatpickr-day.prevMonthDay, .flatpickr-calendar .flatpickr-day.nextMonthDay {
-  color : #DAE1E7;
+  color : #BABFC7;
 }
 
 .flatpickr-calendar .flatpickr-day:hover {

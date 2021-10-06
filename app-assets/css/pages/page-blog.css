@@ -1,3 +1,13 @@
+@charset 'UTF-8';
+/* custom */
+/* 정상 */
+/* 퇴근 */
+/* 지각 */
+/* 결근 */
+/* 조퇴 */
+/* 휴가 */
+/* 외출 */
+/* 복귀 */
 .blog-list-wrapper .blog-title-truncate {
   display : -webkit-box;
   -webkit-line-clamp : 2;
@@ -22,7 +32,7 @@
 }
 
 .blog-sidebar .blog-recent-posts .text-body-heading:hover {
-  color : #5E50EE !important;
+  color : #7367F0 !important;
 }
 
 .blog-sidebar .blog-recent-post-title, .blog-sidebar .blog-category-title {

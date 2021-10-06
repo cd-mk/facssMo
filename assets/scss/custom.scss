@@ -4,6 +4,7 @@
 	Author: mk.sung
 ================================================================================
 */
+@import './variables/variables'; // Components includes
 
 // Core variables and mixins
 @font-face {
@@ -30,34 +31,6 @@
         url(../fonts/NotoSansKR-Bold.woff) format('woff'),
         url(../fonts/NotoSansKR-Bold.otf) format('opentype');
  }
-
-/* custom */
-$primary:#7367F0 !default;
-$primary-dark: #063679 !default;
-$primary-light:rgba($primary, 0.12);
-$success: #28c76f !default;
-$info: #00cfe8 !default;
-$secondary: #616161 !default;
-$warning: #FFC107 !default; 
-$danger: #ea5455;
-$dark:rgba(0, 0, 0, 0.5);
-$purple:#3843a5 !default;
-
-$gray-color: rgba(116, 116, 116, 0.5);
-$gray-dark: rgba(0, 0, 0, 0.2);
-$light: rgba(256, 256, 256, 0.07);
-$lighter: rgba(256, 256, 256, 0.2);
-$lightest: rgba(256, 256, 256, 0.5);
-$primary-light: rgba($primary, 0.1);
-
-$gowork:#0072E4  !default; /* 정상 */
-$leavework:#C84EE5 !default; /* 퇴근 */
-$belate:#FC7600 !default;/* 지각 */
-$absent:#EA5455 !default;/* 결근 */
-$early:#FFCE2B !default;/* 조퇴 */
-$dayoff:#20C9F5 !default;/* 휴가 */
-$outside:#04CFAC !default;/* 외출 */
-$return:#86C814 !default;/* 복귀 */
 
 .btn.disabled, .btn:disabled {
   background: #999 !important;
@@ -100,33 +73,13 @@ $return:#86C814 !default;/* 복귀 */
 %mb2 {margin-bottom: 1rem;}
 %mt1 {margin-top: 1rem;}
 %mt2 {margin-top: 1rem;}
-%mt05 {margin-top: .25rem;}
+%mt05 {margin-top: .5rem;}
+%mt10 {margin-top: 1rem;}
+%mt20 {margin-top: 2rem;}
 %box {border: 1px solid #e7e7e7;padding: .5rem 1rem;margin-bottom:1rem;}
 %fontEn {font-family: Arial, Helvetica, sans-serif;
 }
 %layout-width {max-width: 1400px;margin:0 auto;}
-%border-radius {-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
-%border-radius-20 {-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;}
-%border-radius-50 {-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
-%border-radius-top {
-   -webkit-border-top-left-radius-: 5px;-moz-border-top-left-radius: 5px;border-top-left-radius: 5px;
-   -webkit-border-top-right-radius-: 5px;-moz-border-top-right-radius: 5px;border-top-right-radius: 5px;
-}
-%border-radius-left {
-   -webkit-border-top-left-radius-: 5px;-moz-border-top-left-radius: 5px;border-top-left-radius: 5px;
-   -webkit-border-bottom-left-radius-: 5px;-moz-border-bottom-left-radius: 5px;border-bottom-left-radius: 5px;
-}
-a {
-  color : #111;
-  text-decoration : none;
-  background-color : transparent;
-}
-
-a:hover {
-  color :$primary;
-  text-decoration : none;
-}
-
 /* common */
 [class*="-box"] {
     &.top {
@@ -183,7 +136,95 @@ a:hover {
 .content-body {
   flex-direction: column;
 }
+.card-x {background-color: #fff;}
+.btn-outline-primary {
+  background-color: #fff;
+}
 /* common end =============== */
+.text-gowork {
+  color:$gowork;
+}
+.text-leavework{
+  color:$leavework; 
+}
+.text-belate{
+  color:$belate;
+}
+.text-absent {
+  color:$absent;
+}
+.text-early {
+  color:$early;
+}
+.text-dayoff {
+  color:$dayoff;
+}
+.text-outside{
+  color:$outside;
+}
+.text-return {
+  color:$return;
+}
+
+.bg-gowork {
+  background-color: $gowork;
+}
+.bg-leavework {
+  background-color: $leavework;
+}
+.bg-belate {
+  background-color: $belate;
+}
+.bg-absent {
+  background-color: $absent; 
+}
+.bg-early {
+  background-color:$early;
+  color:$early-text;
+}
+.bg-dayoff {
+ background-color: $dayoff;
+}
+.bg-outside {
+  background-color: $outside; 
+}
+.bg-return {
+ background-color: $return;
+}
+.badge-light-gowork {
+  background-color: rgba($gowork, 0.12);
+  color: $gowork;
+}
+.badge-light-leavework {
+  background-color: rgba($leavework, 0.12);
+  color: $leavework;
+}
+.badge-light-belate {
+  background-color: rgba($belate, 0.12);
+  color: $belate;
+}
+.badge-light-absent {
+  background-color:rgba($absent, 0.12);
+  color: $absent;
+}
+.badge-light-early {
+  background-color:rgba($early, 0.2);
+  color:$early-light-text;
+}
+.badge-light-dayoff {
+  background-color: rgba($dayoff, 0.12);
+  color: $blue;
+}
+.badge-light-outside {
+  background-color: rgba($outside, 0.12);
+  color: $outside;
+}
+.badge-light-return {
+  background-color: rgba($return, 0.12);
+  color: $return;
+}
+
+
 .avatar{
   img {
     width:33px;
@@ -203,7 +244,7 @@ a:hover {
   }
 }
 .card.section {
-  margin-bottom:1.5rem;
+  margin-bottom:1rem;
   h2 {
     font-size: 16px;
     padding:0;
@@ -233,18 +274,22 @@ a:hover {
 }
 
 .footer {
-  padding:0 !important;
-  min-height: 0.5rem !important;
+  height: 2rem;
+  text-align: center;
+  background: #eee;
+  font-size: 11px;
+  line-height: 2rem;
+  color: #aaa;
 }
 .main-menu {
   .navbar-header {
     background-color: $primary;
     height:105px;
-    color:#fff;
+    color:$white;
     vertical-align: middle;
     .btn {
-      color:#fff;
-      background-color: rgba(256,256,256, 0.12);
+      color:$white;
+      background-color: $white-12;
       border:1px solid #47389A;
       padding:4px 8px;
       margin-left: 8px;
@@ -257,7 +302,7 @@ a:hover {
         width:24px;
         height:24px;
         background-color: transparent;
-        border:1px solid #fff;
+        border:1px solid $white;
         margin-right:2px;
        .feather {
          width:16px;
@@ -384,7 +429,25 @@ a:hover {
 }
 
 /* 공지사항 */
+.tbl-header-box {
+  width:100%;
+  margin:1rem 0 0.75rem 0;
+  .col, .col-auto {
+    margin:0;
+    padding:0;
+  }
+  .btn {
+    padding:5px 8px;
+    border:1px solid $gray-200 !important;
+  }
+  select {
+    height:25px;
+  }
+}
 .ul-tbl-box {
+  &.list-default {
+    border-top:2px solid #111;
+  }
   .custom-checkbox + a {
     padding-left:30px;
   }
@@ -419,9 +482,6 @@ a:hover {
               margin-top:10px;
               color:#777;
               .col {
-                &.info {
-
-                }
                 &.regi-date {
                   text-align: right;
                   padding-right:34px;
@@ -455,13 +515,13 @@ a:hover {
     padding-top:260px !important;
   }
   &.sub {
-    padding-top:125px !important;
+    padding-top:120px !important;
   }
 }
 .brand-name {
   display: inline-block;
   font-size: 20px;
-  color:#fff;
+  color:$white;
   margin-bottom: 0;
   vertical-align: middle;
 }
@@ -472,7 +532,7 @@ a:hover {
   height:240px;
   left:0;
   top:60px;
-  color:#fff;
+  color:$white;
   padding:1.5rem;
   .media {
     @extend %fontEn;
@@ -495,8 +555,8 @@ a:hover {
   }
   .inner-1 {
     .btn {
-      background: #142BC4;
-      color:#fff;
+      background:$primary-dark;
+      color:$white;
     }
   }
   .inner-2 {
@@ -539,16 +599,16 @@ a:hover {
   align-items : center !important;
   margin-left: auto !important;
   i {
-    color:#fff;
+    color:$white;
     font-size: 18px;
   }
 }
 .event-box {
   background: #37326D url(../images/common/bg-medal.png) no-repeat 96% 0;
-  color:#fff;
+  color:$white;
   padding-bottom: 1rem;
   h2 {
-    color:#fff;
+    color:$white;
   }
   .status-member {
     margin-top:1rem;
@@ -564,7 +624,7 @@ a:hover {
     
     .media-body {
       .name {
-        color:#fff;
+        color:$white;
       }
       .dep {
         color:rgba(256, 256, 256, 0.6);
@@ -592,10 +652,10 @@ a:hover {
   position: absolute;
   top:60px;
   left:0;
-  background-color: #142BC4;
+  background-color:$primary-dark;
   width:100%;
   h2 {
-    color:#fff;
+    color:$white;
     height:40px;
     line-height: 40px;
     font-size:16px;
@@ -672,7 +732,7 @@ a:hover {
     .btn {
       padding:8px 2px;
       width: 100%;
-      background-color: #fff;
+      background-color: $white;
     }
     .dropdown-menu {
       padding:15px 5px 15px 15px;
@@ -698,61 +758,61 @@ a:hover {
           padding-left:5px;
           .name {
             font-size: 12px;
-            color:#fff;
+            color:$white;
           }
           .dep {
             font-size: 10px;
             line-height: 1.5;
-            color:rgba(256, 256, 256, 0.7)
+            color:$white-700
           }
         }
       }
     }
    .today-gowork {
-    border:1px solid $gowork;
+    border:1px solid $gray-100;
     .badge {
       background-color: $gowork;
-      color:#fff;
+      color:$white;
       }
       + .dropdown-menu {
         background-color: $gowork;
       }
     }
     .today-leavework {
-      border:1px solid $leavework;
+      border:1px solid $gray-100;
       .badge {
         background-color: $leavework;
-        color:#fff;
+        color:$white;
       }
       + .dropdown-menu {
         background-color: $leavework;
       }
     }
     .today-belate {
-      border:1px solid $belate;
+      border:1px solid $gray-100;
       .badge {
         background-color: $belate;
-        color:#fff;
+        color:$white;
       }
       + .dropdown-menu {
         background-color: $belate;
       }
     }
     .today-absent {
-      border:1px solid $absent;
+      border:1px solid $gray-100;
       .badge {
         background-color: $absent;
-        color:#fff;
+        color:$white;
       }
       + .dropdown-menu {
         background-color: $absent;
       }
     }
     .today-early {
-      border:1px solid $early;
+      border:1px solid $gray-100;
       .badge {
         background-color: $early;
-        color:#fff;
+        color:$white;
       }
       + .dropdown-menu {
         background-color: $early;
@@ -769,34 +829,345 @@ a:hover {
       }
     }
     .today-dayoff {
-      border:1px solid $dayoff;
+      border:1px solid $gray-100;
       .badge {
         background-color: $dayoff;
-        color:#fff;
+        color:$white;
       }
       + .dropdown-menu {
         background-color: $dayoff;
       }
     }
     .today-outside {
-      border:1px solid $outside;
+      border:1px solid $gray-100;
       .badge {
         background-color: $outside;
-        color:#fff;
+        color:$white;
       }
       + .dropdown-menu {
         background-color: $outside;
       }
     }
     .today-return {
-      border:1px solid $return;
+      border:1px solid $gray-100;
       .badge {
         background-color: $return;
-        color:#fff;
+        color:$white;
       }
       + .dropdown-menu {
         background-color: $return;
       }
     }
   }
+}
+/* 근태현황 */
+.select-date-box {
+  text-align:center;
+  margin-bottom:1rem;
+  border:1px solid $primary;
+  .date-current {
+      font-size:24px;
+      @extend %fontEn;
+      margin-bottom:1rem;
+      color:#111;
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: bold;
+      em {
+        font-style: normal;
+        font-size:1rem;
+        display: inline-block;
+        padding-left:4px;
+      }
+      .date-small {
+        font-size: 20px;
+      }
+    }
+  i {
+      padding:6px;
+      /*border:1px solid #aaa;*/
+      /*border-radius: 4px;*/
+  }
+  i:before {
+      font-size: 1rem;
+      color: #777;
+      width: 25px;
+      /* background: black; */
+      display: inline-block;
+      line-height: 25px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      height: 25px;
+  }
+  .date-search {
+    margin-bottom:2rem;
+  }
+}
+
+.attend-box-wrap {
+  .attend-box {
+    .card-body {
+       overflow-y: auto;
+      max-height: 200px;
+      padding:0 15px 0;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      display: inline-flex;
+      > .card {
+        min-width: 100px;
+        border:1px solid #dedede !important;
+        padding:6px 10px 4px;
+        margin:0 5px 5px 0;
+
+      }
+    }
+    &.gowork {
+      border:1px solid rgba($gowork, 0.3) !important;
+        .badge {
+          background-color: $gowork;
+        }
+      }
+    &.leavework {
+      border:1px solid rgba($leavework, 0.5) !important;
+      .badge {
+        background-color: $leavework;
+      }
+    }
+    &.belate {
+     border:1px solid rgba($belate, 0.5) !important;
+    .badge {
+        background-color: $belate;
+      }
+    }
+    &.absent {
+      border:1px solid rgba($absent, 0.5) !important;
+    .badge {
+        background-color: $absent;
+      }
+    }
+    &.early {
+      border:1px solid rgba($early, 0.7) !important;
+      .badge {
+        background-color: $early;
+        color:$early-text;
+      }
+    }
+    &.dayoff {
+      border:1px solid rgba($dayoff, 0.5) !important;
+      .badge {
+        background-color: $dayoff;
+      }
+    }
+    &.outside {
+      border:1px solid rgba($outside, 0.5) !important;
+      .badge {
+          background-color: $outside;
+        }
+    }
+    &.return {
+      border:1px solid rgba($return, 0.5) !important;
+      .badge {
+        background-color: $return;
+      }
+    }
+  }
+}
+.search-data {
+  background-color: $primary-light;
+  border:1px solid $primary;
+}
+.search-box {
+  input[type="text"] {
+      border-color: $primary;
+    }
+  .search-num {
+    overflow:hidden;
+    margin: 1rem 0 0 0;
+    .col {
+      padding:0;
+      text-align: center;
+      border-left:1px solid $gray-100;
+      .inner {
+        font-size: 0.89rem;
+        color:#777;
+        .num {
+          font-size: 1rem;
+          @extend %fontEn;
+          color:#111;
+          padding:3px 1px;
+          font-weight: bold;
+        }
+      }
+      &:first-child {
+        border-left: 0;
+      }
+    }
+  }
+}
+.slect-tbl-box {
+  border:1px solid $gray-300;
+  td {
+    font-size:11px;
+    vertical-align: top;
+    p {
+      margin-bottom: 0;
+    }
+    &:first-child {
+      vertical-align: middle;
+    }
+    .time-box {
+      max-width:110px;
+      .time-commute {
+        strong {
+          color:$dark;
+        }
+      }
+      .time-total {
+        margin-top:5px;
+        strong {
+          color:$dark;
+        }
+      }
+      .time-week-total {
+        color:#000;
+      }
+    }
+    .badge-box {
+      padding:0;
+      margin-top:5px;
+      justify-content: center;
+      min-width: 110px;
+       .badge {
+        font-size: 100%;
+        em {
+          display: inline-block;
+          margin-left: 2px;
+        }
+      }
+      &.month {
+        .badge {
+          background: none !important;
+          border:none !important;
+          em {
+            color:#111;
+          }
+        }
+      }
+      .col, .col-auto {
+        padding:3px;
+        em {
+          font-style: normal;
+        }
+      }
+    }
+  }
+  th, td {
+    text-align: center;
+    padding:0.72rem 1rem;
+    white-space: nowrap;
+    justify-content: center;
+  }
+}
+/* 근무그룹관리 */
+.btn-switch {
+  border:1px solid $primary;
+  background:#fff;
+  min-width: 45px;
+    &::after {
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: '\f00d';
+      padding-left:5px;
+    }
+  &.active {
+    background:$primary;
+  color:#fff;
+  &::before {
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: '\f00c';
+      padding-right:5px;
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
+.workgroup-mgt {
+  .card {
+        margin-bottom:1rem;
+      }
+  .card-body {
+      > .form-group {
+      margin-top:1rem;
+      border-bottom:1px solid #ccc;
+      padding-bottom:0.75rem;
+      > .form-label {
+        margin-bottom:1rem;
+      }
+    }
+  }
+    .time-setting {
+    > .row {
+      margin:0.75rem 0 0 0;
+      border-bottom:1px solid $primary-light;
+      padding-bottom:0.75rem;
+      &:last-child {
+        border: 0;
+      }
+      &:first-child {
+        margin-top:0;
+      }
+    }
+    .col, .col-auto {
+        padding:0 0.2rem;
+      }
+    .week {
+      align-self:center;
+    }
+    .time-setting-box {
+      .row {
+        &:last-child {
+          margin-top:0.5rem;
+        }
+      }
+    }
+    .btn-group-sm>.btn, .btn-sm {
+      padding:0.3rem;
+    }
+    .dropdown-toggle::after {
+      left: .15rem;
+    }
+    .dropdown-item {
+      padding: .25rem 1.28rem;
+    }
+    .dropdown-menu {
+          min-width: 3rem;
+      max-height: 200px;
+      overflow-y: auto
+    }
+  }
+}
+.btn-xs,.btn-group-xs>.btn {
+    padding:0 .5rem;
+    font-size:.75rem;
+    line-height:1.5;
+    border-radius:.25rem
+}
+.icon-btn {
+    width: calc(2.25276rem + 2px);
+    padding: 0;
+    line-height: 2.25276rem;
+}
+.icon-btn.btn-xs, .btn-group-xs>.icon-btn.btn {
+    width: calc(1.5rem + 2px);
+    line-height: 1.5rem;
 }
